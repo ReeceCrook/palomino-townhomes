@@ -7,9 +7,15 @@ function ImageCarousel(){
 
     return (
         <div className='carousel-wrapper'>
-            <Carousel showArrows={true} >
+            <Carousel showArrows={true}>
                 {
-                    images.map(image => <img src={image.src} alt={image.description} />)
+                    images.map(image => {
+                        return (
+                            <div key={image.id} className="carousel-image">
+                                <img src={image.src} alt={image.description} />
+                            </div>
+                        )
+                    })
                 }
             </Carousel>
       </div>
