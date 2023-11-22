@@ -21,8 +21,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route exact path="/" element={<Home />} />
       </Routes>
-      <div className='top-div'>
-      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #e5ffe5;
   color: black;
 }
 
@@ -22,11 +22,6 @@ body {
 
 }
 
-.top-div {
-  outline: auto;
-  outline-color: aqua;
-}
-
 .navLinks {
   outline: auto;
   font-size: x-large;
@@ -37,4 +32,18 @@ body {
   text-decoration: none;
   align-self: center;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.model-1551{
+  width: 45%;
+  height: auto;
+  float: left;
+  padding-left: 15px;
+}
+
+.model-1558 {
+  width: 45%;
+  height: auto;
+  float: right;
+  padding-right: 15px;
 }
