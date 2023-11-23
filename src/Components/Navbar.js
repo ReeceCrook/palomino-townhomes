@@ -28,21 +28,21 @@ function NavBar() {
             <NavLink
                 to="/hoaDocs"
                 exact="true"
-                className="navLinks"
+                className="navLinksRight"
             >
                 HOA Docs
             </NavLink>
             <NavLink
                 to="/aboutUs"
                 exact="true"
-                className="navLinks"
+                className="navLinksRight"
             >
                 About Us
             </NavLink>
             <NavLink
                 to="/contact"
                 exact="true"
-                className="navLinks"
+                className="navLinksRight"
             >
                 Contact
             </NavLink>

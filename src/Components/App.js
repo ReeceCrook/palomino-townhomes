@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import '../App.css';
+import mbLogo from '../data/MB 2016 Logo.jpg'
 import NavBar from './Navbar';
 import Home from './Home';
 import FloorPlans from './FloorPlans';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <img src={mbLogo} alt='mbLogo' className='mbLogo' />
       <Routes>
         <Route path="/floorPlans" element={<FloorPlans />} />
         <Route path="/inventory" element={<Inventory />} />

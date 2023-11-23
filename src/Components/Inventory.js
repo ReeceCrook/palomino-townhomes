@@ -64,18 +64,20 @@ function Inventory() {
 
   return (
     <div>
-      <h1>Inventory</h1>
       <img 
         src={cleanPalomino} 
         alt='Inventory' 
-        onMouseMove={handleMouseMove} 
+        onMouseMove={handleMouseMove}
+        style={{
+          marginTop: '20px'
+        }}
       />
 
       <p style={{
         color: 'black',
         position: 'absolute',
-        top: hoveredPosition.y + 50,
-        left: hoveredPosition.x - 45,
+        top: hoveredPosition.y + 130,
+        left: hoveredPosition.x + 320,
         padding: '10px',
         background: '#f0f0f0',
         border: '1px solid #ccc',

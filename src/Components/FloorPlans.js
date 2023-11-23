@@ -6,7 +6,6 @@ import { floorPlanImages } from '../Carousel'
 function FloorPlans() {
   return (
     <div>
-      <h1>Floor Plans</h1>
       <div className='model-1551'>
       <h3>Model-1551</h3>
         <Carousel showArrows={true}>
