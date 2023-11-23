@@ -1,0 +1,67 @@
+5161: 825, 326 || 670, 260 || hoveredPosition.x <= 825 && hoveredPosition.x >= 670 && hoveredPosition.y <= 326 && hoveredPosition.y >= 260 ? true: false
+
+5153: 825, 388 || 670, 332 || hoveredPosition.x <= 825 && hoveredPosition.x >= 670 && hoveredPosition.y <= 388 && hoveredPosition.y >= 332 ? true: false
+
+5145: 825, 446 || 670, 392 || hoveredPosition.x <= 825 && hoveredPosition.x >= 670 && hoveredPosition.y <= 446 && hoveredPosition.y >= 392 ? true: false
+
+5137: 825, 504 || 670, 452 || hoveredPosition.x <= 825 && hoveredPosition.x >= 670 && hoveredPosition.y <= 504 && hoveredPosition.y >= 452 ? true: false
+
+5129: 825, 563 || 670, 510 || hoveredPosition.x <= 825 && hoveredPosition.x >= 670 && hoveredPosition.y <= 563 && hoveredPosition.y >= 510 ? true: false
+
+5121: 825, 621 || 670, 569 || hoveredPosition.x <= 825 && hoveredPosition.x >= 670 && hoveredPosition.y <= 621 && hoveredPosition.y >= 569 ? true: false
+
+5113: 825, 680 || 670, 629 || 
+
+5105: 825, 754 || 670, 688 || 
+
+
+
+5169: 570, 285 || 460, 218 || 
+
+5177: 570, 345 || 460, 290 || 
+
+5185: 570, 403 || 460, 348 || 
+
+5193: 570, 460 || 460, 409 || 
+
+5201: 570, 523 || 460, 467 || 
+
+5209: 570, 580 || 460, 526 || 
+
+5217: 570, 639 || 460, 586 || 
+
+5225: 570, 710 || 460, 465 || 
+
+
+
+5289: 436, 286 || 315, 220 || 
+
+5281: 436, 346 || 315, 290 || 
+
+5273: 436, 403 || 315, 350 || 
+
+5265: 436, 462 || 315, 408 || 
+
+5257: 436, 522 || 315, 467 || 
+
+5249: 436, 580 || 315, 526 || 
+
+5241: 436, 640 || 315, 585 || 
+
+5233: 436, 710 || 315, 643 || 
+
+
+
+5297: 304, 342 || 107, 263 || 
+
+5305: 216, 401 || 58, 347 || 
+
+5313: 216, 460 || 58, 404 || 
+
+5321: 216, 518 || 58, 462 || 
+
+5329: 216, 577 || 58, 522 || 
+
+5337: 304, 636 || 107, 583 || 
+
+5345: 304, 710 || 107, 640 || 
