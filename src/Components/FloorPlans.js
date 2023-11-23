@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 import { Carousel } from 'react-responsive-carousel'
-import { floorPlanImages } from '../CarouselImages'
+import { floorPlanImages } from '../Carousel'
 
 function FloorPlans() {
   return (
