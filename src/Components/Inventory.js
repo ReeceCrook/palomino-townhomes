@@ -42,13 +42,15 @@ function Inventory() {
       {boolenArr[0] ? <p style={{
         color: 'black',
         position: "absolute",
-        top: hoveredPosition.y + hoveredPosition.y * 0.2,
-        left: hoveredPosition.x + hoveredPosition.y * 0.5,
+        top: hoveredPosition.y,
+        left: hoveredPosition.x,
         padding: '10px',
         background: '#f0f0f0',
         border: '1px solid #ccc',
         borderRadius: '4px',
         boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+        marginLeft: '15%',
+        marginTop: '5%'
       }}>: 
         Hovered at: ({hoveredPosition.x}, {hoveredPosition.y})
          Unit: {boolenArr[1]}
