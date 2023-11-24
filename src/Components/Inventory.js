@@ -21,9 +21,11 @@ function Inventory() {
       hoveredPosition.y <= current.y[0] && 
       hoveredPosition.y >= current.y[1]) {
         boolenArr = []
-        boolenArr.push(true, current.name)
+        boolenArr.push(true, current.name) 
+        return boolenArr
     } else {
       boolenArr.push(false)
+      return boolenArr
     }
   })
 
@@ -39,14 +41,14 @@ function Inventory() {
       />
       {boolenArr[0] ? <p style={{
         color: 'black',
-        position: 'absolute',
-        top: hoveredPosition.y + 130,
-        left: hoveredPosition.x + 320,
+        position: "absolute",
+        top: hoveredPosition.y + hoveredPosition.y * 0.2,
+        left: hoveredPosition.x + hoveredPosition.y * 0.5,
         padding: '10px',
         background: '#f0f0f0',
         border: '1px solid #ccc',
         borderRadius: '4px',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
       }}>: 
         Hovered at: ({hoveredPosition.x}, {hoveredPosition.y})
          Unit: {boolenArr[1]}
