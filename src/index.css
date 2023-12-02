@@ -4,8 +4,9 @@
 }
 
 [theme='dark'] {
-    --body_backround: black;
+    --body_backround: #121212;
     --body_color: white;
+    --form_input_color: grey;
 }
 
 *:not(.inventory-hovered) {
