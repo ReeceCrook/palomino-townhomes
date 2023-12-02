@@ -1,11 +1,11 @@
 import React from 'react'
 import '../App.css'
 import { Carousel } from 'react-responsive-carousel'
-import { floorPlanImages } from '../Carousel'
+import { floorPlanImages } from '../carousel'
 
 function FloorPlans() {
   return (
-    <div>
+    <div className='floorPlan-wrapper'>
       <div className='model-1551'>
       <h3>Model-1551</h3>
         <Carousel showArrows={true}>

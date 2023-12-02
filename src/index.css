@@ -1,0 +1,13 @@
+:root {
+    --body_backround: white;
+    --body_color: black;
+}
+
+[theme='dark'] {
+    --body_backround: black;
+    --body_color: white;
+}
+
+*:not(.inventory-hovered) {
+    transition: all 0.3s ease-in-out;
+}

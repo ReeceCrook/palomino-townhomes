@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import cleanPalomino from '../data/CleanPalomino-plat.png'
+import cleanPalomino from '../assets/mainPics/CleanPalomino-plat.png'
 import units from '../units'
 
 function Inventory() {
@@ -10,8 +10,6 @@ function Inventory() {
     const { offsetX, offsetY } = event.nativeEvent;
     setHoveredPosition({ x: offsetX, y: offsetY });
   };
-  
-
   
   let boolenArr = []
 
@@ -30,30 +28,32 @@ function Inventory() {
   })
 
   return (
-    <div>
+    <div className='inventory-wrapper'>
       <img 
         src={cleanPalomino} 
         alt='Inventory' 
         onMouseMove={handleMouseMove}
         style={{
-          marginTop: '20px'
+          marginTop: '20px',
         }}
       />
-      {boolenArr[0] ? <p style={{
+      {boolenArr[0] ? <p className='inventory-hovered' style={{
         color: 'black',
         position: "absolute",
+        maxWidth: '300px',
         top: hoveredPosition.y,
         left: hoveredPosition.x,
         padding: '10px',
         background: '#f0f0f0',
         border: '1px solid #ccc',
         borderRadius: '4px',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
         marginLeft: '15%',
-        marginTop: '5%'
+        marginTop: '5%',
+        overflow: 'clip',
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
       }}>: 
         Hovered at: ({hoveredPosition.x}, {hoveredPosition.y})
-         Unit: {boolenArr[1]}
+         Unit: {JSON.stringify(boolenArr[1])}
       </p>: false}
     </div>
   )

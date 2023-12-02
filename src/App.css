@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--body_backround);
+  color: var(--body_color);
   margin-top: 10px;
 }
 
@@ -10,17 +10,15 @@ body {
 
 .carousel-wrapper {
   margin-top: 5rem;
-  width: 60%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   box-shadow: #2b15453d 1px 10px 10px 5px;
 }
 
-.mb-logo {
-  margin-top: 60px;
-  width: 60%;
+.palomino-Logo {
+  width: 100%;
   height: auto;
-  box-shadow: #2b15453d 1px 10px 10px 5px;
 
 }
 
@@ -62,7 +60,12 @@ body {
   float: right;
 }
 
-.mbLogo {
-  width: 20%;
-  height: 10%;
+.mountains {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.floorPlan-wrapper {
+  margin-top: 20px;
 }
