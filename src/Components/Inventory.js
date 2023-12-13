@@ -36,7 +36,7 @@ function Inventory() {
                 top: hoveredPosition.y,
                 left: hoveredPosition.x,
               }}>
-                Unit: {current.name} <br></br>
+                Unit: {current.name} <br></br><br></br>
                 {current.message ? lines: ""}
               </p>
             );
