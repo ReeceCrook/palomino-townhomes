@@ -7,7 +7,8 @@ const units = [
     {
       "name": 5161,
       "x": block1,
-      "y": [326, 260]
+      "y": [326, 260],
+      "message": "Under Contract"
     },
     {
       "name": 5153,
@@ -52,7 +53,12 @@ const units = [
     {
       "name": 5177,
       "x": block2,
-      "y": [345, 290]
+      "y": [345, 290],
+      "message": '3 bedrooms, 1 bathroom upper level \n \
+      Master bedroom/bathroom, Kitchen, laundry, \
+      living room, ½ bath main level \n \
+      Unfinished basement \n \
+      1 car detached garage'
     },
     {
       "name": 5185,

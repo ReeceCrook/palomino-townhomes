@@ -6,9 +6,9 @@ import ImageCarousel from './ImageCarousel'
 
 function Home() {
   return (
-    <div>
+    <div className='homeDiv'>
       <img src={mbLogo} alt='mountains' className='mountains' />
-      <img src={Logo} alt='palomino-Logo' className='palomino-Logo' />
+      <img src={Logo} alt='palomino Logo' className='palominoLogo' />
       <ImageCarousel />
     </div>
   )
