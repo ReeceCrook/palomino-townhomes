@@ -4,7 +4,6 @@ import cleanPalomino from '../assets/mainPics/Optimized-CleanPalomino-plat.jpg'
 import units from '../units'
 
 function Inventory() {
-
   const [hoveredPosition, setHoveredPosition] = useState({ x: 0, y: 0 });
   
   const handleMouseMove = (event) => {
@@ -36,11 +35,16 @@ function Inventory() {
                 top: hoveredPosition.y,
                 left: hoveredPosition.x,
               }}>
-                Unit: {current.name} <br></br><br></br>
-                {current.message ? lines: ""}
+                Unit: {current.name} <br></br>
+                {current.model}<br></br>
+                {lines}
               </p>
             );
-      }})};
+        }else{
+          return false
+        }
+
+    })};
     </div>
   );
 }

@@ -19,7 +19,7 @@ function Contact() {
   return (
     <div className='container'>
       <div className="text">
-        Contact us Form
+        Contact Us
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <div className='formRow'>

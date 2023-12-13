@@ -1,11 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Reviews from "./Reviews";
 import mbLogo from '../assets/mainPics/MB-logo.png';
-import jim from '../assets/mainPics/jim.jpg'
+import jim from '../assets/footerPics/jim.jpg'
 
-function BottomNavBar() {
+function Footer() {
+
     return (
         <div className="footerWrapper">
+            <Reviews />
+
             <div className="jimContactInfoContainer">
                 <img src={jim} alt="Jim Stiltner" className="jimContactPhoto" />
                 <h4 className="contactH4" >
@@ -64,4 +68,4 @@ function BottomNavBar() {
     );
 }
 
-export default BottomNavBar
+export default Footer
