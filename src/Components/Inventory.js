@@ -67,7 +67,7 @@ function Inventory() {
             return (
               <p className='inventoryHovered' key={current.name} style={{
                 top: hoveredPosition.y,
-                left: hoveredPosition.x / .7,
+                left: hoveredPosition.x / .9,
               }}>
                 Unit: {current.name} <br></br>
                 {current.model}<br></br>

@@ -39,13 +39,13 @@ function NavBar() {
             >
                 About Us
             </NavLink>
-            {/* <NavLink
-                to="/contact"
+            {/* { <NavLink
+                to="/demo"
                 exact="true"
                 className="navLinksRight"
             >
-                Contact
-            </NavLink> */}
+                Demo
+            </NavLink>} */}
         </div>
     );
 }
