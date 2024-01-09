@@ -26,115 +26,145 @@ import exteriorRight from './assets/FloorPlans/Model-1558/Model-1558-exterior.pn
 const homeImages = [
     {
         'id': 1,
-        'src': img1,
-        'description': 'In living room looking twords kitchen'
+        'original': img1,
+        "thumbnail": img1,
+        'des': 'In living room looking towords kitchen'
     },
     {
         'id': 2,
-        'src': img2,
-        'description': 'In kitchen'
+        'original': img2,
+        "thumbnail": img2,
+        'des': 'In kitchen'
     },
     {
         'id': 3,
-        'src': img3,
-        'description': 'Bedroom'
+        'original': img3,
+        "thumbnail": img3,
+        'des': 'Bedroom'
     },
     {
         'id': 4,
-        'src': img4,
-        'description': 'In living room looking twords kitchen (house 2)'
+        'original': img4,
+        "thumbnail": img4,
+        'des': 'In living room looking twords kitchen (house 2)'
     },
     {
         'id': 5,
-        'src': img5,
-        'description': 'In living room looking twords kitchen (house 3)'
+        'original': img5,
+        "thumbnail": img5,
+        'des': 'In living room looking twords kitchen (house 3)'
     }
 ]
 
 const floorPlanImages = [
-    {
-        'id': 1,
-        'src': lef1,
-        'model': 1551,
-        'description': ''
-    },
-    {
-        'id': 2,
-        'src': left2,
-        'model': 1551,
-        'description': ''
-    },
-    {
-        'id': 3,
-        'src': left3,
-        'model': 1551,
-        'description': ''
-    },
-    {
-        'id': 4,
-        'src': right1,
-        'model': 1551,
-        'description': ''
-    },
-    {
-        'id': 5,
-        'src': right2,
-        'model': 1551,
-        'description': ''
-    },
-    {
-        'id': 6,
-        'src': right3,
-        'model': 1551,
-        'description': ''
-    },
-    {
-        'id': 7,
-        'src': left4,
-        'model': 1558,
-        'description': ''
-    },
-    {
-        'id': 8,
-        'src': left5,
-        'model': 1558,
-        'description': ''
-    },
-    {
-        'id': 9,
-        'src': left6,
-        'model': 1558,
-        'description': ''
-    },
-    {
-        'id': 10,
-        'src': right4,
-        'model': 1558,
-        'description': ''
-    },
-    {
-        'id': 11,
-        'src': right5,
-        'model': 1558,
-        'description': ''
-    },
-    {
-        'id': 12,
-        'src': right6,
-        'model': 1558,
-        'description': ''
-    },
-    {
-        'id': 13,
-        'src': exteriorLeft,
-        'model': 1551
-    },
-    {
-        'id': 14,
-        'src': exteriorRight,
-        'model': 1558
-    }
 
+    [
+        {
+            'id': 13,
+            'original': exteriorLeft,
+            "thumbnail": exteriorLeft,
+            "left": true,
+            'model': 1551
+        },
+        {
+            'id': 1,
+            'original': lef1,
+            "thumbnail": lef1,
+            "left": true,
+            'model': 1551,
+        },
+        {
+            'id': 2,
+            'original': left2,
+            "thumbnail": left2,
+            "left": true,
+            'model': 1551,
+        },
+        {
+            'id': 3,
+            'original': left3,
+            "thumbnail": left3,
+            "left": true,
+            'model': 1551,
+        },
+    ],
+    [
+        {
+            'id': 4,
+            'original': right1,
+            "thumbnail": right1,
+            "left": false,
+            'model': 1551,
+        },
+        {
+            'id': 5,
+            'original': right2,
+            "thumbnail": right2,
+            "left": false,
+            'model': 1551,
+        },
+        {
+            'id': 6,
+            'original': right3,
+            "thumbnail": right3,
+            "left": false,
+            'model': 1551,
+        },
+    ],
+    [
+        {
+            'id': 7,
+            'original': left4,
+            "thumbnail": left4,
+            "left": true,
+            'model': 1558,
+        },
+        {
+            'id': 8,
+            'original': left5,
+            "thumbnail": left5,
+            "left": true,
+            'model': 1558,
+        },
+        {
+            'id': 9,
+            'original': left6,
+            "thumbnail": left6,
+            "left": true,
+            'model': 1558,
+        },
+    ],
+    [
+        {
+            'id': 10,
+            'original': right4,
+            "thumbnail": right4,
+            "left": false,
+            'model': 1558,
+        },
+        {
+            'id': 11,
+            'original': right5,
+            "thumbnail": right5,
+            "left": false,
+            'model': 1558,
+        },
+        {
+            'id': 12,
+            'original': right6,
+            "thumbnail": right6,
+            "left": false,
+            'model': 1558,
+        },
+
+        {
+            'id': 14,
+            'original': exteriorRight,
+            "thumbnail": exteriorRight,
+            "left": false,
+            'model': 1558
+        }
+    ]
 ]
 
 

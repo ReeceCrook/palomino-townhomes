@@ -9,7 +9,6 @@ function Footer() {
     return (
         <div className="footerWrapper">
             <Reviews />
-
             <div className="jimContactInfoContainer">
                 <img src={jim} alt="Jim Stiltner" className="jimContactPhoto" />
                 <h4 className="contactH4" >

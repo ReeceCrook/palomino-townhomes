@@ -11,13 +11,13 @@ function NavBar() {
             >
                 Home
             </NavLink>
-            <NavLink
+            {/* <NavLink
                 to="/floorPlans"
                 exact="true"
                 className="navLinks"
             >
                 Floor Plans
-            </NavLink>
+            </NavLink> */}
             <NavLink
                 to="/inventory"
                 exact="true"
@@ -39,13 +39,13 @@ function NavBar() {
             >
                 About Us
             </NavLink>
-            <NavLink
+            {/* <NavLink
                 to="/contact"
                 exact="true"
                 className="navLinksRight"
             >
                 Contact
-            </NavLink>
+            </NavLink> */}
         </div>
     );
 }

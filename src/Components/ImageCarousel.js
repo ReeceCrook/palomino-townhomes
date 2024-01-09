@@ -1,23 +1,12 @@
 import React from "react";
 import { homeImages } from "../carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // carousel loader
-import { Carousel } from "react-responsive-carousel";
+import ImageGallery from "react-image-gallery";
 
 function ImageCarousel(){
 
     return (
         <div className='carousel-wrapper'>
-            <Carousel showArrows={true}>
-                {
-                    homeImages.map(image => {
-                        return (
-                            <div key={image.id} className="carousel-image">
-                                <img src={image.src} alt={image.description} />
-                            </div>
-                        )
-                    })
-                }
-            </Carousel>
+            <ImageGallery items={homeImages} />
       </div>
     )
 }
