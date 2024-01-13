@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+
 .container{
+  position: relative;
   max-width: 800px;
   background: #fff;
   width: 800px;
   padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  color: var(--body_color);
-  background-color: var(--body_backround);
+  color: black;
+  background-color: white;
   font-family: 'Poppins', sans-serif;
-  margin-top: 10%;
   margin-left: 25%;
 }
 
@@ -61,4 +62,63 @@ form .formRow .inputData{
   background-color: var(--body_backround);
   color: var(--body_color);
   border: none;
+}
+
+.businessCard {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  text-align: center;
+  top: 0;
+  left: 100%;
+  position: absolute;
+}
+
+.businessCard img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.businessCard a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.businessCard a:hover {
+  text-decoration: underline;
+}
+
+.facebookButton {
+  position: absolute;
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #1877f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  left: 30%;
+}
+
+.facebookButton:hover {
+  background-color: #145686;
+}
+
+.facebookLogo {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.bbbRating {
+  position: absolute;
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  right: 30%;
 }

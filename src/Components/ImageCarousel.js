@@ -2,11 +2,11 @@ import React from "react";
 import { homeImages } from "../carousel";
 import ImageGallery from "react-image-gallery";
 
-function ImageCarousel(){
+function ImageCarousel({ pics }){
 
     return (
         <div className='carousel-wrapper'>
-            <ImageGallery items={homeImages} />
+            <ImageGallery items={pics} />
       </div>
     )
 }

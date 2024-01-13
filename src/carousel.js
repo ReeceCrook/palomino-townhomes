@@ -1,58 +1,101 @@
 
-import img1 from './assets/CarouselImages/seven.jpg'
-import img2 from './assets/CarouselImages/eleven.jpg'
-import img3 from './assets//CarouselImages/22-web-or-mls-DSC04703_final.jpg'
-import img4 from './assets/CarouselImages/UNADJUSTEDNONRAW_thumb_367c.jpg'
-import img5 from './assets/CarouselImages/UNADJUSTEDNONRAW_thumb_3680.jpg'
+import img1 from './assets/HomePagePics/7-web-or-mls-DSC04633_final.jpg'
+import img2 from './assets/HomePagePics/11-web-or-mls-DSC04648.jpg'
+import img3 from './assets/HomePagePics/mMqDXo4VQIeRfrObnzu57w_thumb_3680.jpg'
+import img4 from './assets/HomePagePics/mNMU2Ah0RQCG9WxK+l4DfQ_thumb_367e.jpg'
+import img5 from './assets/HomePagePics/u4nmejO7SfG615RK4a2MPw_thumb_367d.jpg'
+import img6 from './assets/HomePagePics/22-web-or-mls-DSC04703_final.jpg'
+import img7 from './assets/HomePagePics/25-web-or-mls-DSC04713.jpg'
+import img8 from './assets/HomePagePics/xH9+ZCXlQZKGQsR96AC0FA_thumb_3647.jpg'
+import img9 from './assets/HomePagePics/bcdIvlx2Q96qh7bL02FqnA_thumb_364d.jpg'
+// import img10 from './assets/HomePagePics/lfbDjwD3QxeYQKpO%WgX8g_thumb_364e.jpg'
+import img11 from './assets/HomePagePics/15-web-or-mls-DSC04668.jpg'
+import img12 from './assets/HomePagePics/41+5rAJwR8GrQ+p82L5Zqg_thumb_3646.jpg'
+import img13 from './assets/HomePagePics/4-web-or-mls-DJI_0464.jpg'
+import img14 from './assets/HomePagePics/1-web-or-mls-DJI_0449.jpg'
 
-import lef1 from './assets/FloorPlans/Model-1551/Left/Screenshot 2023-12-01 165618.png'
-import left2 from './assets/FloorPlans/Model-1551/Left/Screenshot 2023-11-22 155348.png'
-import left3 from './assets/FloorPlans/Model-1551/Left/Screenshot 2023-11-22 155412.png'
-import left4 from './assets/FloorPlans/Model-1558/left/Screenshot 2023-11-22 155615.png'
-import left5 from './assets/FloorPlans/Model-1558/left/Screenshot 2023-11-22 155633.png'
-import left6 from './assets/FloorPlans/Model-1558/left/Screenshot 2023-11-22 155653.png'
-import exteriorLeft from './assets/FloorPlans/Model-1551/Model-1551-exterior.png'
+import card1img1 from './assets/FloorPlans/card1/Model 1551L-Main-8.8.23.jpg'
+import card1img2 from './assets/FloorPlans/card1/Model 1551L- Upper.jpg'
+import card1img3 from './assets/FloorPlans/card1/Model 1551L- Basement.jpg'
 
-import right1 from './assets/FloorPlans/Model-1551/right/Screenshot 2023-11-22 155332.png'
-import right2 from './assets/FloorPlans/Model-1551/right/Screenshot 2023-11-22 155401.png'
-import right3 from './assets/FloorPlans/Model-1551/right/Screenshot 2023-11-22 155419.png'
-import right4 from './assets/FloorPlans/Model-1558/right/Screenshot 2023-11-22 155627.png'
-import right5 from './assets/FloorPlans/Model-1558/right/Screenshot 2023-11-22 155643.png'
-import right6 from './assets/FloorPlans/Model-1558/right/Screenshot 2023-11-22 155702.png'
-import exteriorRight from './assets/FloorPlans/Model-1558/Model-1558-exterior.png'
+import card2img1 from './assets/FloorPlans/card2/Model 1551R-Main.jpg'
+import card2img2 from './assets/FloorPlans/card2/Model 1551R- Upper.jpg'
+import card2img3 from './assets/FloorPlans/card2/Model 1551R- Basement.jpg'
 
-
+import card3img1 from './assets/FloorPlans/card3/Model 1558-main.jpg'
+import card3img2 from './assets/FloorPlans/card3/Model 1558-Upper.jpg'
+import card3img3 from './assets/FloorPlans/card3/Model 1558-Basement.jpg'
 
 const homeImages = [
     {
         'id': 1,
         'original': img1,
         "thumbnail": img1,
-        'des': 'In living room looking towords kitchen'
     },
     {
         'id': 2,
         'original': img2,
         "thumbnail": img2,
-        'des': 'In kitchen'
     },
     {
         'id': 3,
         'original': img3,
         "thumbnail": img3,
-        'des': 'Bedroom'
     },
     {
         'id': 4,
         'original': img4,
         "thumbnail": img4,
-        'des': 'In living room looking twords kitchen (house 2)'
     },
     {
         'id': 5,
         'original': img5,
         "thumbnail": img5,
-        'des': 'In living room looking twords kitchen (house 3)'
+    },
+    {
+        'id': 6,
+        'original': img6,
+        "thumbnail": img6,
+    },
+    {
+        'id': 7,
+        'original': img7,
+        "thumbnail": img7,
+    },
+    {
+        'id': 8,
+        'original': img8,
+        "thumbnail": img8,
+    },
+    {
+        'id': 9,
+        'original': img9,
+        "thumbnail": img9,
+    },
+    // {
+    //     'id': 10,
+    //     'original': img10,
+    //     "thumbnail": img10,
+    // },
+    {
+        'id': 11,
+        'original': img11,
+        "thumbnail": img11,
+    },
+    {
+        'id': 12,
+        'original': img12,
+        "thumbnail": img12,
+    },
+    {
+        'id': 13,
+        'original': img13,
+        "thumbnail": img13,
+    },
+    {
+        'id': 14,
+        'original': img14,
+        "thumbnail": img14,
     }
 ]
 
@@ -60,110 +103,54 @@ const floorPlanImages = [
 
     [
         {
-            'id': 13,
-            'original': exteriorLeft,
-            "thumbnail": exteriorLeft,
-            "left": true,
-            'model': 1551
-        },
-        {
-            'id': 1,
-            'original': lef1,
-            "thumbnail": lef1,
-            "left": true,
+            'original': card1img1,
+            "thumbnail": card1img1,
             'model': 1551,
         },
         {
-            'id': 2,
-            'original': left2,
-            "thumbnail": left2,
-            "left": true,
+            'original': card1img2,
+            "thumbnail": card1img2,
             'model': 1551,
         },
         {
-            'id': 3,
-            'original': left3,
-            "thumbnail": left3,
-            "left": true,
+            'original': card1img3,
+            "thumbnail": card1img3,
             'model': 1551,
-        },
-    ],
-    [
-        {
-            'id': 4,
-            'original': right1,
-            "thumbnail": right1,
-            "left": false,
-            'model': 1551,
-        },
-        {
-            'id': 5,
-            'original': right2,
-            "thumbnail": right2,
-            "left": false,
-            'model': 1551,
-        },
-        {
-            'id': 6,
-            'original': right3,
-            "thumbnail": right3,
-            "left": false,
-            'model': 1551,
-        },
-    ],
-    [
-        {
-            'id': 7,
-            'original': left4,
-            "thumbnail": left4,
-            "left": true,
-            'model': 1558,
-        },
-        {
-            'id': 8,
-            'original': left5,
-            "thumbnail": left5,
-            "left": true,
-            'model': 1558,
-        },
-        {
-            'id': 9,
-            'original': left6,
-            "thumbnail": left6,
-            "left": true,
-            'model': 1558,
-        },
-    ],
-    [
-        {
-            'id': 10,
-            'original': right4,
-            "thumbnail": right4,
-            "left": false,
-            'model': 1558,
-        },
-        {
-            'id': 11,
-            'original': right5,
-            "thumbnail": right5,
-            "left": false,
-            'model': 1558,
-        },
-        {
-            'id': 12,
-            'original': right6,
-            "thumbnail": right6,
-            "left": false,
-            'model': 1558,
-        },
-
-        {
-            'id': 14,
-            'original': exteriorRight,
-            "thumbnail": exteriorRight,
-            "left": false,
-            'model': 1558
         }
+    ],
+    [
+        {
+            'original': card2img1,
+            "thumbnail": card2img1,
+            'model': 1551,
+        },
+        {
+            'original': card2img2,
+            "thumbnail": card2img2,
+            'model': 1551,
+        },
+        {
+            'original': card2img3,
+            "thumbnail": card2img3,
+            'model': 1551,
+        }
+    ],
+    [
+        {
+            'original': card3img1,
+            "thumbnail": card3img1,
+            'model': 1558,
+        },
+        {
+            'original': card3img2,
+            "thumbnail": card3img2,
+            'model': 1558,
+        },
+        {
+            'original': card3img3,
+            "thumbnail": card3img3,
+            'model': 1558,
+        },
     ]
 ]
 

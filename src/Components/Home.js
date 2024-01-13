@@ -1,16 +1,13 @@
 import React from 'react'
-import Logo from '../assets/darkModePics/PalominoRanch-Logotype.png'
-// import mbLogo from '../assets/darkModePics/ColorMtns2.png'
-import palominoMap from '../assets/mainPics/PalominoMap.jpg'
+import Logo from '../assets/mainPics/PalominoRanch-Logotype.png'
 import ImageCarousel from './ImageCarousel'
+import { homeImages } from '../carousel'
 
 function Home() {
   return (
     <div className='homeDiv'>
-      {/* <img src={mbLogo} alt='Mountains' className='mountains' /> */}
       <img src={Logo} alt='palomino Logo' className='palominoLogo' />
-      <ImageCarousel />
-      <img src={palominoMap} alt='Palomino Map' className='palominoMap' />
+      <ImageCarousel pics={homeImages} />
     </div>
   )
 }
