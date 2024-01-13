@@ -8,27 +8,17 @@
     border-style: groove;
     margin: 10px;
     padding: 10px;
+    height: 560px;
   } 
 
   
   .cardImgs {
-    height: 450px;
-    max-width: 260px;
+    max-width: 400px;
   } 
 
+
   .cardTextDiv {
-    border: #333;
-    border-radius: 5px;
-    border-style: double;
-  }
-
-  .card2TextDiv {
-    border: #333;
-    border-style: groove;
-    border-width: 5px;
-  }
-
-  .card3TextDiv {
     border-bottom: solid;
     border-width: 3px;
+    height: 18%;
   }

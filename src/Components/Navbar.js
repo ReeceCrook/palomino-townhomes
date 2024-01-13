@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import homeIcon from '../assets/mainPics/home-icon-silhouette.png';
 
 function NavBar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const navigate = useNavigate()
+
+    const homeButtonHandler = () => {
+        navigate('/')
+    }
       
     const toggleDropdown = () => {
         setIsDropdownOpen(current => !current);
@@ -10,6 +16,7 @@ function NavBar() {
 
     return (
         <div className="dropdown">
+            <button><img src={homeIcon} alt="home icon" onClick={homeButtonHandler} className="homeIcon"></img></button>
             <a href="#" className="navi" onClick={toggleDropdown}>
                 <div className="lineOne"></div>
                 <div className="lineTwo"></div>

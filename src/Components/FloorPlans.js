@@ -17,10 +17,9 @@ function FloorPlans() {
           </p>
         </div>
         <ImageCarousel pics={floorPlanImages[0]} />
-        
       </div>
       <div className='card2'>
-        <div className='card2TextDiv'>
+        <div className='cardTextDiv'>
           <h2>2 Bedroom 2.5 Bath</h2>
           <p>
             Unfinished Basement<br />
@@ -30,7 +29,7 @@ function FloorPlans() {
         <ImageCarousel pics={floorPlanImages[1]} />
       </div>
       <div className='card3'>
-        <div className='card3TextDiv'>
+        <div className='cardTextDiv'>
           <h2>3 Bedroom 2.5 Bath</h2>
           <p>
             Master on the Main<br />
