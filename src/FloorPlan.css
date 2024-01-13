@@ -1,0 +1,16 @@
+.floorPlanWrapper {
+    display: inline-flex;
+  }
+  
+  .card1, .card2, .card3 {
+    border: #333;
+    border-radius: 5px;
+    border-style: groove;
+    margin: 10px;
+  } 
+
+  
+  .cardImgs {
+    height: 450px;
+    max-width: 260px;
+  } 
