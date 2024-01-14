@@ -7,13 +7,24 @@ body {
 
 .App {
   text-align: center;
-  
 }
 
-/* .palominoLogo {
-  width: 100%;
+.homeDiv {
+}
+
+.palominoLogo {
+  width: 68%;
   height: auto;
+}
+
+/* .homeImgs {
+  height: 20%;
 } */
+
+.test {
+  display: inline-block;
+  width: 50%;
+}
 
 /* .jimContactInfoContainer {
   float: left;
@@ -38,8 +49,6 @@ body {
 @media screen and (min-width:0px) and (max-width:640px) {
 
 }*/
-
-
 
 .navi {
   z-index: 1000;

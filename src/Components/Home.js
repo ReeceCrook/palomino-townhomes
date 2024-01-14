@@ -7,7 +7,10 @@ function Home() {
   return (
     <div className='homeDiv'>
       <img src={Logo} alt='palomino Logo' className='palominoLogo' />
-      <ImageCarousel pics={homeImages} />
+      <div className='test'>
+        <ImageCarousel pics={homeImages} />
+      </div>
+      
     </div>
   )
 }
