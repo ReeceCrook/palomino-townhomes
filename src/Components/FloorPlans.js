@@ -17,7 +17,7 @@ function FloorPlans() {
             1 car detached garage
           </p>
         </div>
-        <ImageCarousel pics={floorPlanImages[0]} showFullscreenButton={false} />
+        <ImageCarousel pics={floorPlanImages[0]} showFullscreenButton={true} />
       </div>
       <div className='card2'>
         <div className='cardTextDiv'>
@@ -27,7 +27,7 @@ function FloorPlans() {
             1 car detached garage
           </p>
         </div>
-        <ImageCarousel pics={floorPlanImages[1]} showFullscreenButton={false} />
+        <ImageCarousel pics={floorPlanImages[1]} showFullscreenButton={true} />
       </div>
       <div className='card3'>
         <div className='cardTextDiv'>
@@ -38,7 +38,7 @@ function FloorPlans() {
             2 car detached garage
           </p>
         </div>
-        <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={false} />
+        <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={true} />
       </div>
     </div>
   )

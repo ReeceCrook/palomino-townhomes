@@ -8,7 +8,6 @@ import img6 from './assets/HomePagePics/11-web-or-mls-DSC04648.jpg'
 import img7 from './assets/HomePagePics/25-web-or-mls-DSC04713.jpg'
 import img8 from './assets/HomePagePics/xH9+ZCXlQZKGQsR96AC0FA_thumb_3647.jpg'
 import img9 from './assets/HomePagePics/bcdIvlx2Q96qh7bL02FqnA_thumb_364d.jpg'
-import img11 from './assets/HomePagePics/15-web-or-mls-DSC04668.jpg'
 import img12 from './assets/HomePagePics/41+5rAJwR8GrQ+p82L5Zqg_thumb_3646.jpg'
 import img13 from './assets/HomePagePics/4-web-or-mls-DJI_0464.jpg'
 import img14 from './assets/HomePagePics/1-web-or-mls-DJI_0449.jpg'
@@ -24,12 +23,13 @@ import card2img3 from './assets/FloorPlans/card2/Model 1551R- Basement.jpg'
 import card3img1 from './assets/FloorPlans/card3/Model 1558-main.jpg'
 import card3img2 from './assets/FloorPlans/card3/Model 1558-Upper.jpg'
 import card3img3 from './assets/FloorPlans/card3/Model 1558-Basement.jpg'
+
 const homeImages = [
     {
         'id': 1,
         'original': img1,
         "thumbnail": img1,
-        'originalClass': 'homeImgs'
+        'originalClass': 'homeImgs',
     },
     {
         'id': 2,
@@ -77,12 +77,6 @@ const homeImages = [
         'id': 9,
         'original': img9,
         "thumbnail": img9,
-        'originalClass': 'homeImgs'
-    },
-    {
-        'id': 11,
-        'original': img11,
-        "thumbnail": img11,
         'originalClass': 'homeImgs'
     },
     {
