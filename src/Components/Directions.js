@@ -7,6 +7,7 @@ function Directions() {
   const mapContainerStyle = {
     width: '100%',
     height: '400px',
+    transition: '0'
   };
 
   const center = {
@@ -21,6 +22,7 @@ function Directions() {
         googleMapsApiKey="AIzaSyB3cApC-B3MXt39hL_s8fyaA3l0Jn_I8rY"
       >
         <GoogleMap
+          
           mapContainerStyle={mapContainerStyle}
           center={center}
           zoom={15}

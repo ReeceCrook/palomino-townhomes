@@ -60,7 +60,7 @@ function Contact() {
           </div>
           <div className='businessCard'>
             <img src={jimPhoto} alt='Profile' />
-            <h2>Jimes A. Stiltner</h2>
+            <h2>James A. Stiltner</h2>
             <a href='tel:7199643526'>719-964-3526</a> <br />
             <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
           </div>

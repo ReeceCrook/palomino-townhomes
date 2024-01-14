@@ -7,6 +7,7 @@ body {
 
 .App {
   text-align: center;
+  
 }
 
 /* .palominoLogo {
@@ -38,12 +39,7 @@ body {
 
 }*/
 
-.navi div {
-  background-color: white;
-  height: 4px;
-  margin: 5px 0;
-  border-radius: 25px;
-}
+
 
 .navi {
   z-index: 1000;
@@ -55,6 +51,13 @@ body {
   display: block;
   margin: 1em 0 0 1em;
   position: fixed;
+}
+.navi div {
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  height: 4px;
+  margin: 5px 0;
+  border-radius: 25px;
 }
 
 .lineOne {
@@ -134,9 +137,6 @@ body {
   border-radius: 3px;
   font-size: x-large;
 }
-
-
-
 
 .homeIcon {
   z-index: 1000;

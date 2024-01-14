@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../FloorPlan.css'
 import { floorPlanImages } from '../carousel'
 import ImageCarousel from './ImageCarousel'
-import { Fullscreen } from 'react-image-gallery'
  
 
 
