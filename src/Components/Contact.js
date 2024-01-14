@@ -21,7 +21,7 @@ function Contact() {
     e.target.reset()
   };
   return (
-    <div className='wrapper'>
+    <div className='contactUsWrapper'>
       <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo'/>
         <div className='container'>
           <div className="text">

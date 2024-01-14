@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-
+.contactUsWrapper{
+  display: inline-block;
+}
 .container{
   position: relative;
   max-width: 800px;
@@ -11,7 +13,6 @@
   color: black;
   background-color: white;
   font-family: 'Poppins', sans-serif;
-  margin-left: 18%;
 }
 
 .container .text{
@@ -113,12 +114,16 @@ form .formRow .inputData{
 
 .bbbRating {
   position: absolute;
-  margin-top: 25px;
+  margin-top: 10px;
   display: inline-flex;
   align-items: center;
   padding: 10px;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  right: 38%;
+  right: 20%;
+}
+
+.mbLogo {
+  width: 65%;
 }

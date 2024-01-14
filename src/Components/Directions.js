@@ -10,8 +10,8 @@ function Directions() {
   };
 
   const center = {
-    lat: 38.908,
-    lng: -104.714,
+    lat: 38.90859237820933,
+    lng: -104.71451754110377,
   };
 
   return (
@@ -34,7 +34,9 @@ function Directions() {
         rel="noopener noreferrer"
         className='mapDirectionsATag'
       >
-        Google Map Directions
+        Palomino Townhomes<br />
+        5249 Palomino Ranch Point<br />
+        Colorado Springs, Co. 80922
       </a>
     </div>
   )

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../FloorPlan.css'
- import { floorPlanImages } from '../carousel'
- import ImageCarousel from './ImageCarousel'
+import { floorPlanImages } from '../carousel'
+import ImageCarousel from './ImageCarousel'
+import { Fullscreen } from 'react-image-gallery'
  
 
 
 function FloorPlans() {
+
   return (
     <div className='floorPlanWrapper'>
       <div className='card1'>
@@ -16,7 +18,7 @@ function FloorPlans() {
             1 car detached garage
           </p>
         </div>
-        <ImageCarousel pics={floorPlanImages[0]} />
+        <ImageCarousel pics={floorPlanImages[0]} showFullscreenButton={false} />
       </div>
       <div className='card2'>
         <div className='cardTextDiv'>
@@ -26,7 +28,7 @@ function FloorPlans() {
             1 car detached garage
           </p>
         </div>
-        <ImageCarousel pics={floorPlanImages[1]} />
+        <ImageCarousel pics={floorPlanImages[1]} showFullscreenButton={false} />
       </div>
       <div className='card3'>
         <div className='cardTextDiv'>
@@ -37,8 +39,7 @@ function FloorPlans() {
             2 car detached garage
           </p>
         </div>
-        
-        <ImageCarousel pics={floorPlanImages[2]} />
+        <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={false} />
       </div>
     </div>
   )

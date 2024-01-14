@@ -1,10 +1,10 @@
 
 import img1 from './assets/HomePagePics/7-web-or-mls-DSC04633_final.jpg'
-import img2 from './assets/HomePagePics/11-web-or-mls-DSC04648.jpg'
-import img3 from './assets/HomePagePics/mMqDXo4VQIeRfrObnzu57w_thumb_3680.jpg'
-import img4 from './assets/HomePagePics/mNMU2Ah0RQCG9WxK+l4DfQ_thumb_367e.jpg'
-import img5 from './assets/HomePagePics/u4nmejO7SfG615RK4a2MPw_thumb_367d.jpg'
-import img6 from './assets/HomePagePics/22-web-or-mls-DSC04703_final.jpg'
+import img2 from './assets/HomePagePics/mMqDXo4VQIeRfrObnzu57w_thumb_3680.jpg'
+import img3 from './assets/HomePagePics/mNMU2Ah0RQCG9WxK+l4DfQ_thumb_367e.jpg'
+import img4 from './assets/HomePagePics/u4nmejO7SfG615RK4a2MPw_thumb_367d.jpg'
+import img5 from './assets/HomePagePics/22-web-or-mls-DSC04703_final.jpg'
+import img6 from './assets/HomePagePics/11-web-or-mls-DSC04648.jpg'
 import img7 from './assets/HomePagePics/25-web-or-mls-DSC04713.jpg'
 import img8 from './assets/HomePagePics/xH9+ZCXlQZKGQsR96AC0FA_thumb_3647.jpg'
 import img9 from './assets/HomePagePics/bcdIvlx2Q96qh7bL02FqnA_thumb_364d.jpg'
@@ -25,7 +25,6 @@ import card2img3 from './assets/FloorPlans/card2/Model 1551R- Basement.jpg'
 import card3img1 from './assets/FloorPlans/card3/Model 1558-main.jpg'
 import card3img2 from './assets/FloorPlans/card3/Model 1558-Upper.jpg'
 import card3img3 from './assets/FloorPlans/card3/Model 1558-Basement.jpg'
-
 const homeImages = [
     {
         'id': 1,

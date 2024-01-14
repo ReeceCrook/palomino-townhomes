@@ -26,7 +26,7 @@ function NavBar() {
                 <div className="dropdown-content" onClick={toggleDropdown}>
                 <NavLink 
                     to="/" 
-                    activeClassName="active"
+                    activeclassname="active"
                     exact="true"
                 >
                     Home
@@ -34,31 +34,32 @@ function NavBar() {
                 <NavLink
                     to="/floorPlans"
                     exact="true"
-                    activeClassName="active"
+                    activeclassname="active"
                 >
                     Floor Plans
                 </NavLink>
                 <NavLink
+                    to="/directions"
+                    exact="true"
+                    activeclassname="active"
+                >
+                    Directions
+                </NavLink>
+                <NavLink
                     to="/communityInfo"
                     exact="true"
-                    activeClassName="active"
+                    activeclassname="active"
                 >
                     Community Info
                 </NavLink>
                 <NavLink
                     to="/contactUs"
                     exact="true"
-                    activeClassName="active"
+                    activeclassname="active"
                 >
                     Contact Us
                 </NavLink>
-                <NavLink
-                    to="/directions"
-                    exact="true"
-                    activeClassName="active"
-                >
-                    Directions
-                </NavLink>
+                
                 </div>
             )}
         </div>
