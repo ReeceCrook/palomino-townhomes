@@ -11,6 +11,10 @@
     height: 560px;
   } 
 
+.card3 {
+  margin-right: 6%;
+}
+
   .cardTextDiv {
     border-bottom: solid;
     border-width: 3px;

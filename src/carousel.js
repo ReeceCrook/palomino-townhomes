@@ -1,5 +1,5 @@
 
-import img1 from './assets/HomePagePics/7-web-or-mls-DSC04633_final.jpg'
+import img1 from './assets/HomePagePics/StartingInTheLow.png'
 import img2 from './assets/HomePagePics/mMqDXo4VQIeRfrObnzu57w_thumb_3680.jpg'
 import img3 from './assets/HomePagePics/mNMU2Ah0RQCG9WxK+l4DfQ_thumb_367e.jpg'
 import img4 from './assets/HomePagePics/u4nmejO7SfG615RK4a2MPw_thumb_367d.jpg'

@@ -1,68 +1,82 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import homeIcon from '../assets/mainPics/home-icon.png';
+import homeIcon from '../assets/Icons/home.png';
+import floorPlansIcon from '../assets/Icons/blueprint.png'
+import directionsIcon from "../assets/Icons/direction.png";
+import communityInfoIcon from "../assets/Icons/info.png";
+import contactUsIcon from '../assets/Icons/contact-us.png'
 import "../App.css"
 
 function NavBar() {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const navigate = useNavigate()
-
-    const homeButtonHandler = () => {
-        navigate('/')
-    }
-      
-    const toggleDropdown = () => {
-        setIsDropdownOpen(current => !current);
-    };
 
     return (
         <div className="dropdown">
-            <img src={homeIcon} alt="home icon" onClick={homeButtonHandler} className="homeIcon"></img>
-            <a href="#" className="navi" onClick={toggleDropdown}>
-                <div className="lineOne"></div>
-                <div className="lineTwo"></div>
-                <div className="lineThree"></div>
-            </a>
-            {isDropdownOpen && (
-                <div className="dropdown-content" onClick={toggleDropdown}>
-                <NavLink 
-                    to="/" 
-                    activeclassname="active"
-                    exact="true"
-                >
-                    Home
-                </NavLink>
-                <NavLink
-                    to="/floorPlans"
-                    exact="true"
-                    activeclassname="active"
-                >
-                    Floor Plans
-                </NavLink>
-                <NavLink
-                    to="/directions"
-                    exact="true"
-                    activeclassname="active"
-                >
-                    Directions
-                </NavLink>
-                <NavLink
-                    to="/communityInfo"
-                    exact="true"
-                    activeclassname="active"
-                >
-                    Community Info
-                </NavLink>
-                <NavLink
-                    to="/contactUs"
-                    exact="true"
-                    activeclassname="active"
-                >
-                    Contact Us
-                </NavLink>
+            <NavLink 
+                to="/" 
+                activeclassname="active"
+                exact="true"
+            >
+                <figure className="iconsWrapper">
+                    <button className="iconButtons">
+                        <img src={homeIcon} alt="home icon" onClick={() => navigate('/')} className="icons" />
+                        <figcaption>Home</figcaption>
+                    </button>
+                </figure>
                 
-                </div>
-            )}
+            </NavLink>
+            <NavLink
+                to="/floorPlans"
+                exact="true"
+                activeclassname="active"
+            >
+                <figure className="iconsWrapper">
+                    <button className="iconButtons">
+                        <img src={floorPlansIcon} alt="Floor Plan icon" onClick={() => navigate('/floorPlans')} className="icons" />
+                        <figcaption>Floor Plans</figcaption>
+                    </button>
+                    
+                </figure>
+            </NavLink>
+            <NavLink
+                to="/directions"
+                exact="true"
+                activeclassname="active"
+            >
+                <figure className="iconsWrapper">
+                    <button className="iconButtons">
+                        <img src={directionsIcon} alt="Directions icon" onClick={() => navigate('/directions')} className="icons" />
+                        <figcaption>Directions</figcaption>
+                    </button>
+                    
+                </figure>
+            </NavLink>
+            <NavLink
+                to="/communityInfo"
+                exact="true"
+                activeclassname="active"
+            >
+                <figure className="iconsWrapper">
+                    <button className="iconButtons">
+                        <img src={communityInfoIcon} alt="Community Info icon" onClick={() => navigate('/communityInfo')} className="icons" />
+                        <figcaption>Community Info</figcaption>
+                    </button>
+                    
+                </figure>
+            </NavLink>
+            <NavLink
+                to="/contactUs"
+                exact="true"
+                activeclassname="active"
+            >
+                <figure className="iconsWrapper">
+                    <button className="iconButtons">
+                        <img src={contactUsIcon} alt="Contact Us icon" onClick={() => navigate('/contactUs')} className="icons" />
+                        <figcaption>Contact Us</figcaption>
+                    </button>
+                    
+                </figure>
+            </NavLink>
         </div>
     );
 }
