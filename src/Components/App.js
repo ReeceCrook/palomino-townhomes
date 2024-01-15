@@ -5,9 +5,10 @@ import NavBar from './Navbar';
 import Home from './Home';
 import FloorPlans from './FloorPlans';
 import Loading from './Loading.js';
+import Contact from './Contact.js';
 const CommunityInfo = lazy(() => import('./CommunityInfo.js'));
 const Directions = lazy(() => import('./Directions.js'));
-const Contact = lazy(() => import('./Contact.js'));
+
 
 
 function App() {

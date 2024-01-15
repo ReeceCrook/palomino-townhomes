@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
 .contactUsWrapper{
   display: inline-block;
 }
-.container{
+.contactUsContainer{
   position: relative;
   background: #fff;
   padding: 25px 40px 10px 40px;
@@ -13,16 +11,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.container .text{
+.contactUsContainer .contactUsText{
   text-align: center;
   font-size: 41px;
   font-weight: 600;
 }
-.container form{
+.contactUsContainer form{
   padding: 30px 0 0 0;
 }
 
-.container form .formRow{
+.contactUsContainer form .formRow{
   display: flex;
   margin: 32px 0;
 }
@@ -35,7 +33,6 @@ form .formRow .inputData{
 
 .inputData input,
 .textarea textarea{
-  background-color: var(--form_input_color);
   display: block;
   width: 100%;
   height: 100%;
@@ -57,13 +54,11 @@ form .formRow .inputData{
   font-size: 16px;
 }
 .submitBtn {
-  background-color: var(--body_backround);
-  color: var(--body_color);
   border: none;
 }
 
 .businessCard {
-  width: 300px;
+  width: 30%;
   padding: 20px;
   border: 2px solid #ccc;
   text-align: center;
@@ -109,6 +104,10 @@ form .formRow .inputData{
   margin-right: 10px;
 }
 
+.socialsDiv {
+  position: relative;
+}
+
 .bbbRating {
   position: absolute;
   margin-top: 10px;
@@ -123,4 +122,70 @@ form .formRow .inputData{
 
 .mbLogo {
   width: 55%;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactUsContainer .contactUsText{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .mbLogo {
+    width: 100%;
+    margin-bottom: 150%;
+  }
+  .businessCard {
+    width: 55%;
+    top: -50%;
+    left: 10%;
+  }
+  .contactUsWrapper {
+    display: flex;
+    margin-right: 30%;
+    flex-direction: column;
+  }
+  
+  .formRow {
+    flex-direction: column;
+  }
+
+  .inputData {
+    margin-bottom: 10px;
+    padding: 20px 0 20px 0;
+
+  }
+
+  .input-data.textarea {
+    width: 100%;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+
+  .socialsDiv {
+    position: relative;
+  }
+
+  .bbbRating {
+    width: 5%;
+    float: right;
+    position: absolute;
+    margin-top: 65px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    right: 90%;
+  }
+
+  .facebookButton {
+    position: absolute;
+    background-color: #1877f2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    left: 0%;
+  }
+
+  
 }

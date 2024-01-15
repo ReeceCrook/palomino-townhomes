@@ -2,21 +2,44 @@
     display: inline-flex;
   }
   
-  .card1, .card2, .card3 {
-    border: #333;
-    border-radius: 5px;
-    border-style: groove;
-    margin: 10px;
-    padding: 10px;
-    height: 560px;
-  } 
+.card1, .card2, .card3 {
+  border: #333;
+  border-radius: 5px;
+  border-style: groove;
+  margin: 10px;
+  padding: 10px;
+  height: 560px;
+} 
 
 .card3 {
-  margin-right: 6%;
+  margin-right: 8%;
 }
 
-  .cardTextDiv {
-    border-bottom: solid;
-    border-width: 3px;
-    height: 18%;
+.cardTextDiv {
+  border-bottom: solid;
+  border-width: 3px;
+  height: 19%;
+}
+
+@media only screen and (max-width: 600px) {
+  .floorPlanWrapper {
+    display: inline-block;
   }
+  
+.card1, .card2, .card3 {
+  float: left;
+  border: #333;
+  border-radius: 5px;
+  border-style: groove;
+  margin: 10px 80px 10px 10px;
+  padding: 10px;
+  height: 50%;
+} 
+
+
+.cardTextDiv {
+  border-bottom: solid;
+  border-width: 3px;
+  height: 20%;
+}
+}

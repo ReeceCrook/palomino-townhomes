@@ -50,27 +50,10 @@ body {
 
 }*/
 
-.navi {
-  z-index: 1000;
-  top: 38%;
-  right: 1%;
-  background-color: purple;
-  padding: 5px;
-  width: 30px;
-  display: block;
-  margin: 1em 0 0 1em;
-}
-.navi div {
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-  height: 4px;
-  margin: 5px 0;
-  border-radius: 25px;
-}
-
 .dropdown {
   margin-right: 10px;
   position: fixed;
+  top: 20%;
   right: 0;
   z-index: 1001;
 }
@@ -161,3 +144,46 @@ figure:hover img {
   font-size: x-large;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    top: 13%;
+    left: 78%;
+    width: 20%;
+  }
+  .palominoLogo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .homeImgs {
+    max-height: 600px;
+  }
+  
+  .homeImageGalleryWrapper {
+    float: left;
+    width: 80%;
+    .image-gallery-left-nav, .image-gallery-right-nav {
+      display: none;
+    }
+  }
+
+  .directionsWrapper {
+    float: left;
+    margin-left: 5%;
+  }
+
+  .mapDirectionsATag {
+    font-size: large;
+  }
+
+  .communityInfoWrapper {
+    width: 75%;
+    float: left;
+    font-size: medium;
+  }
+
+  .communityInfoWrapperInner {
+    padding: 0%;
+  }
+}
