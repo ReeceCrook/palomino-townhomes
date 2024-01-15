@@ -20,8 +20,8 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
             if (homeTabs) homeTabs.style.display = 'none';
             if (navTabs) navTabs.style.display = 'none';
         } else {
-            if (homeTabs) homeTabs.style.display = '';
-            if (navTabs) navTabs.style.display = '';
+            if (homeTabs) homeTabs.style.display = 'inline-block';
+            if (navTabs) navTabs.style.display = 'inline-block';
         }
     }
 
