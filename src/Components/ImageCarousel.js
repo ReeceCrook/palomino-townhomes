@@ -6,6 +6,7 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
     
 
     function fullscreenHandler() {
+        const viewportWidth = window.innerWidth;
         const homeTabs = document.querySelector('.homeTabs')
         const navTabs = document.querySelector('.dropdown')
         const container = document.querySelector('.image-gallery-fullscreen-button');
@@ -20,7 +21,8 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
             if (homeTabs) homeTabs.style.display = 'none';
             if (navTabs) navTabs.style.display = 'none';
         } else {
-            if (homeTabs) homeTabs.style.display = '';
+            if (homeTabs && viewportWidth > 600) homeTabs.style.display = 'inline-block';
+            else if(homeTabs && viewportWidth <= 600) homeTabs.style.display = 'flex';
             if (navTabs) navTabs.style.display = 'inline-block';
         }
     }
@@ -28,8 +30,6 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
     useEffect(() => {
         fullscreenHandler();
     }, [isFullscreen]);
-
-    console.log(isFullscreen)
 
     return (
         <div className='carousel-wrapper'>
