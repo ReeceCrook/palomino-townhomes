@@ -128,7 +128,7 @@ figure:hover img {
 @media only screen and (max-width: 600px) {
   .homeTabs {
     display: flex;
-    top: 55%;
+    top: 62%;
     position: fixed;
   }
   .dropdown {
