@@ -3,17 +3,16 @@ import ImageGallery from "react-image-gallery";
 
 function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
     const [isFullscreen, setIsFullscreen] = useState(false);
+    
 
     function fullscreenHandler() {
-        const homeTabs = document.querySelector('.tabs.homeTabs')
-        const navTabs = document.querySelector('.tabs.dropdown')
+        const homeTabs = document.querySelector('.homeTabs')
+        const navTabs = document.querySelector('.dropdown')
         const container = document.querySelector('.image-gallery-fullscreen-button');
 
         if(container){
-            console.log(container)
-
             container.addEventListener('click', () => {
-                setIsFullscreen((currnet) => !currnet)
+                setIsFullscreen((current) => !current)
             })
         }
 
@@ -21,16 +20,12 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
             if (homeTabs) homeTabs.style.display = 'none';
             if (navTabs) navTabs.style.display = 'none';
         }
-
-        if(isFullscreen === true) {
-            homeTabs.style.display = 'none';
-            navTabs.style.display = 'none';
-        }
     }
 
     useEffect(() => {
         fullscreenHandler();
     }, []);
+    console.log(isFullscreen)
 
     return (
         <div className='carousel-wrapper'>
