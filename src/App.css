@@ -14,10 +14,6 @@ body {
   height: auto;
 }
 
-.homeImgs {
-  max-height: 600px;
-}
-
 .homeImageGalleryWrapper {
   display: inline-block;
   width: 50%;
@@ -155,11 +151,7 @@ figure:hover img {
     width: 100%;
     height: auto;
   }
-  
-  .homeImgs {
-    max-height: 600px;
-  }
-  
+
   .homeImageGalleryWrapper {
     float: left;
     width: 80%;
