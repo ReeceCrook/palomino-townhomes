@@ -124,6 +124,14 @@ figure:hover img {
   font-size: x-large;
 }
 
+.large-screen-style {
+  display: inline-block;
+}
+
+.small-screen-style {
+  display: flex;
+}
+
 
 @media only screen and (max-width: 600px) {
   .homeTabs {
