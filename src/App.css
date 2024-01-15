@@ -128,8 +128,7 @@ figure:hover img {
 @media only screen and (max-width: 600px) {
   .homeTabs {
     display: flex;
-    top: 62%;
-    position: fixed;
+    position: relative;
   }
   .dropdown {
     top: 13%;
@@ -161,7 +160,7 @@ figure:hover img {
   .communityInfoWrapper {
     width: 70%;
     float: left;
-    font-size: medium;
+    font-size: small;
   }
 
   .communityInfoWrapperInner {

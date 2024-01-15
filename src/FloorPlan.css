@@ -17,7 +17,7 @@
 .cardTextDiv {
   border-bottom: solid;
   border-width: 3px;
-  height: 19%;
+  height: 20%;
 }
 
 @media only screen and (max-width: 600px) {
