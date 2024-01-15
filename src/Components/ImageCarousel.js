@@ -18,9 +18,9 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
 
         const viewportWidth = window.innerWidth;
 
-        if (isFullscreen === true && homeTabs || navTabs) {
-            homeTabs.style.display = 'none';
-            navTabs.style.display = 'none';
+        if (isFullscreen === true) {
+            if(homeTabs) homeTabs.style.display = 'none';
+            if(navTabs) navTabs.style.display = 'none';
         } else {
             if(homeTabs) {
                 homeTabs.classList.add('large-screen-style');
