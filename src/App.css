@@ -124,12 +124,8 @@ figure:hover img {
   font-size: x-large;
 }
 
-.large-screen-style {
-  display: inline-block;
-}
-
-.small-screen-style {
-  display: flex;
+.hidden {
+  display: none;
 }
 
 
