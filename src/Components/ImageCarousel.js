@@ -27,7 +27,7 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
 
     useEffect(() => {
         fullscreenHandler();
-    }, [isFullscreen]);
+    }, []);
 
     console.log(isFullscreen)
 
