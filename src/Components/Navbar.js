@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import homeIcon from '../assets/Icons/home.png';
 import floorPlansIcon from '../assets/Icons/blueprint.png'
 import directionsIcon from "../assets/Icons/direction.png";
@@ -9,9 +9,11 @@ import "../App.css"
 
 function NavBar() {
     const navigate = useNavigate()
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
     return (
-        <div className="dropdown">
+        <div className={`tabs ${isHome ? 'homeTabs' : 'dropdown'}`}>
             <NavLink 
                 to="/" 
                 activeclassname="active"

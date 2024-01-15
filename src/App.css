@@ -22,29 +22,13 @@ body {
   } 
 }
 
-/* .jimContactInfoContainer {
-  float: left;
+.homeTabs {
+  margin-right: 10px;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 1001;
 }
-
-.jimContactInfoContainer:hover {
-  box-shadow: #2b15453d 0 4px 8px 0;
-}
-
-.contactH4 {
-  padding: 2px 16px;
-}
-
-.contactATag {
-  box-shadow: #2b15453d 0 4px 8px 0;
-  padding: 15px;
-  background-color: purple;
-  margin: 5px;
-  color: white;
-}
-
-@media screen and (min-width:0px) and (max-width:640px) {
-
-}*/
 
 .dropdown {
   margin-right: 10px;
@@ -142,10 +126,15 @@ figure:hover img {
 
 
 @media only screen and (max-width: 600px) {
+  .homeTabs {
+    display: flex;
+    top: 55%;
+    position: fixed;
+  }
   .dropdown {
     top: 13%;
-    left: 78%;
-    width: 20%;
+    left: 76%;
+    width: 25%;
   }
   .palominoLogo {
     width: 100%;
@@ -154,7 +143,7 @@ figure:hover img {
 
   .homeImageGalleryWrapper {
     float: left;
-    width: 80%;
+    width: 100%;
     .image-gallery-left-nav, .image-gallery-right-nav {
       display: none;
     }
@@ -170,7 +159,7 @@ figure:hover img {
   }
 
   .communityInfoWrapper {
-    width: 75%;
+    width: 70%;
     float: left;
     font-size: medium;
   }

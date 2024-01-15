@@ -58,12 +58,12 @@ form .formRow .inputData{
 }
 
 .businessCard {
-  width: 30%;
+  width: 15%;
   padding: 20px;
   border: 2px solid #ccc;
   text-align: center;
-  top: 0;
-  right: 100%;
+  top: 23%;
+  left: 2%;
   position: absolute;
 }
 
@@ -125,17 +125,16 @@ form .formRow .inputData{
 }
 
 @media only screen and (max-width: 600px) {
-  .contactUsContainer .contactUsText{
-    font-size: 30px;
-    font-weight: 600;
+  .contactUsContainer {
+    display: none;
   }
   .mbLogo {
     width: 100%;
-    margin-bottom: 150%;
   }
   .businessCard {
-    width: 55%;
-    top: -50%;
+    position: relative;
+    width: 60%;
+    top: 18%;
     left: 10%;
   }
   .contactUsWrapper {
@@ -170,15 +169,16 @@ form .formRow .inputData{
     width: 5%;
     float: right;
     position: absolute;
-    margin-top: 65px;
+    margin-top: 20px;
     padding: 10px;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    right: 90%;
+    right: 28%;
   }
 
   .facebookButton {
+    width: 55%;
     position: absolute;
     background-color: #1877f2;
     color: #fff;
