@@ -1,8 +1,14 @@
 .floorPlanWrapper {
     display: inline-flex;
+    height: 100%;
+    width: 100%;
+    outline: auto;
+    padding-bottom: 20%;
+    background-color: #bd915b;
   }
   
 .card1, .card2, .card3 {
+  background-color: white;
   border: #333;
   border-radius: 5px;
   border-style: groove;
@@ -18,10 +24,6 @@
   border-bottom: solid;
   border-width: 3px;
   height: 20%;
-}
-
-.hidden {
-  display: none;
 }
 
 @media only screen and (min-width: 1024px) {

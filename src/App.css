@@ -1,12 +1,18 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-body {
+html, body {
   background-color: white;
   color: black;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .palominoLogo {
@@ -133,13 +139,16 @@ figure:hover img {
   font-size: x-large;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .backroundImgDiv {
     background-position: center;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .backroundImgDiv {
+    background-image: none;
+  }
   .homeTabs {
     display: flex;
     position: relative;
