@@ -2,39 +2,36 @@ import React, { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 
 function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
-    const [isFullscreen, setIsFullscreen] = useState(false);
     
-
-    const fullscreenHandler = () => {
-        const homeTabs = document.querySelector('.homeTabs');
-        const navTabs = document.querySelector('.dropdown');
-        const container = document.querySelector('.image-gallery-fullscreen-button');
-
-        if(container){
-            container.addEventListener('click', () => {
-                setIsFullscreen((current) => !current);
-            })
-        }
-
-        if (isFullscreen === true) {
-            if(homeTabs) homeTabs.classList.add('hidden');
-            if(navTabs) navTabs.classList.add('hidden');
-            console.log(homeTabs.classList, "1<== homeTabs, navTabs ==>", isFullscreen)
-
-        } else {
-            if(homeTabs){
-                homeTabs.classList.remove('hidden')
-                console.log(homeTabs.classList, "2<== homeTabs, navTabs ==>", isFullscreen)
+    useEffect(() => {
+        const fullscreenHandler = () => {
+          const homeTabs = document.querySelector('.homeTabs');
+          const navTabs = document.querySelector('.dropdown');
+    
+          if (document.fullscreenElement) {
+            console.log("in if")
+            if (homeTabs) homeTabs.classList.add('hidden');
+            if (navTabs) navTabs.classList.add('hidden');
+          } else {
+            console.log("in else")
+            if (homeTabs) homeTabs.classList.remove('hidden');
+            if (navTabs && navTabs.classList.contains('hidden')) {
+              navTabs.classList.remove('hidden');
             }
-                if(navTabs && navTabs.classList.contains('hidden')){
-                    navTabs.classList.remove('hidden');
-                } 
+          }
+        };
+    
+        const fullscreenChangeHandler = () => {
+          fullscreenHandler();
+        };
+    
+        document.addEventListener('fullscreenchange', fullscreenChangeHandler);
+    
+        return () => {
+          document.removeEventListener('fullscreenchange', fullscreenChangeHandler);
+        };
+      }, []);
 
-        }
-    }
-
-
-    fullscreenHandler();
 
     return (
         <div className='carousel-wrapper'>
