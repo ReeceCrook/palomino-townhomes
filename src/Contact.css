@@ -124,7 +124,7 @@ form .formRow .inputData{
   width: 55%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .businessCard {
     z-index: 1000;
     top: 30%;
