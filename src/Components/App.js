@@ -1,4 +1,4 @@
-import {React, useState,lazy, Suspense} from 'react';
+import {React,lazy, Suspense} from 'react';
 import { Route, Routes } from "react-router-dom";
 import '../App.css';
 import NavBar from './Navbar';
@@ -6,8 +6,9 @@ import Home from './Home';
 import FloorPlans from './FloorPlans';
 import Loading from './Loading.js';
 import Contact from './Contact.js';
+import Directions from'./Directions.js'
 const CommunityInfo = lazy(() => import('./CommunityInfo.js'));
-const Directions = lazy(() => import('./Directions.js'));
+
 
 
 

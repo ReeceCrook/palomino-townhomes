@@ -23,16 +23,16 @@ body {
 }
 
 .homeTabs {
+  position: absolute;
   margin-right: 10px;
-  position: fixed;
   top: 20%;
   right: 0;
   z-index: 1001;
 }
 
 .dropdown {
+  position: absolute;
   margin-right: 10px;
-  position: fixed;
   top: 20%;
   right: 0;
   z-index: 1001;
@@ -123,11 +123,6 @@ figure:hover img {
   border-radius: 3px;
   font-size: x-large;
 }
-
-.hidden {
-  display: none;
-}
-
 
 @media only screen and (max-width: 600px) {
   .homeTabs {
