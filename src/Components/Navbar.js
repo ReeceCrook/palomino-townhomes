@@ -25,7 +25,6 @@ function NavBar() {
                         <figcaption>Home</figcaption>
                     </button>
                 </figure>
-                
             </NavLink>
             <NavLink
                 to="/floorPlans"
@@ -37,7 +36,6 @@ function NavBar() {
                         <img src={floorPlansIcon} alt="Floor Plan icon" onClick={() => navigate('/floorPlans')} className="icons" />
                         <figcaption>Floor Plans</figcaption>
                     </button>
-                    
                 </figure>
             </NavLink>
             <NavLink
@@ -76,7 +74,6 @@ function NavBar() {
                         <img src={contactUsIcon} alt="Contact Us icon" onClick={() => navigate('/contactUs')} className="icons" />
                         <figcaption>Contact Us</figcaption>
                     </button>
-                    
                 </figure>
             </NavLink>
         </div>
