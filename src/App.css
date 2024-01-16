@@ -85,7 +85,13 @@ figure:hover img {
   padding: 50px;
 }
 
+.backroundImgDiv {
+  background-image: url(./assets/mainPics/communityInfoBackground.png);
+  padding: 4%;
+}
+
 .communityInfoWrapper {
+  background-color: white;
   display: inline-block;
   padding: 5px;
   border: 2px solid;
