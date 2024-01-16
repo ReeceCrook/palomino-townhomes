@@ -6,7 +6,7 @@
   border: #333;
   border-radius: 5px;
   border-style: groove;
-  margin: 10px;
+  margin: 100px 10px 10px 10px;
   padding: 10px;
 } 
 
@@ -22,6 +22,13 @@
 
 .hidden {
   display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cardTextDiv {
+    padding-bottom: 25px;
+  }
+
 }
 
 
