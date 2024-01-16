@@ -30,19 +30,20 @@
     display: inline-block;
   }
   
-.card1, .card2, .card3 {
-  float: left;
-  border: #333;
-  border-radius: 5px;
-  border-style: groove;
-  margin: 10px 80px 10px 10px;
-  padding: 10px;
-} 
+  .card1, .card2, .card3 {
+    float: left;
+    border: #333;
+    border-radius: 5px;
+    border-style: groove;
+    margin: 10px 80px 10px 10px;
+    padding: 10px;
+    width: 65%;
+  } 
 
 
-.cardTextDiv {
-  border-bottom: solid;
-  border-width: 3px;
-  height: 20%;
-}
+  .cardTextDiv {
+    border-bottom: solid;
+    border-width: 3px;
+    height: 20%;
+  }
 }
