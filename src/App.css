@@ -30,7 +30,7 @@ body {
 }
 
 .dropdown {
-  margin-right: 10px;
+  margin-right: 5px;
   position: fixed;
   top: 20%;
   right: 0;
@@ -130,7 +130,7 @@ figure:hover img {
   .dropdown {
     top: 13%;
     left: 76%;
-    width: 25%;
+    width: 20%;
   }
   .palominoLogo {
     width: 100%;
