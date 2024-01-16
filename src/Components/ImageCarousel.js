@@ -20,17 +20,35 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
           }
         };
     
-        const orientationChangeHandler = () => {
-          setIsFullscreen(window.innerWidth < window.innerHeight);
+        const handleFullscreen = () => {
+          if (!isFullscreen) {
+            const element = document.documentElement;
+    
+            if (element.requestFullscreen) {
+              element.requestFullscreen();
+            } else if (element.webkitRequestFullscreen) {
+              element.webkitRequestFullscreen();
+            }
+          }
+    
+          setIsFullscreen(!isFullscreen);
           fullscreenHandler();
         };
     
-        window.addEventListener('orientationchange', orientationChangeHandler);
+        if (showFullscreenButton) {
+          const fullscreenButton = document.querySelector('.image-gallery-fullscreen-button');
     
-        return () => {
-          window.removeEventListener('orientationchange', orientationChangeHandler);
-        };
-      }, [isFullscreen]);
+          if (fullscreenButton) {
+            fullscreenButton.addEventListener('click', handleFullscreen);
+          }
+    
+          return () => {
+            if (fullscreenButton) {
+              fullscreenButton.removeEventListener('click', handleFullscreen);
+            }
+          };
+        }
+      }, [isFullscreen, showFullscreenButton]);
 
 
     return (
