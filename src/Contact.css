@@ -124,6 +124,7 @@ form .formRow .inputData{
 
 .mbLogo {
   width: 55%;
+  position: relative;
 }
 
 @media only screen and (min-width: 1950px) {

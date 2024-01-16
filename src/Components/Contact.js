@@ -22,13 +22,13 @@ function Contact() {
   };
   return (
     <div className='contactUsWrapper'>
-      <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo'/>
         <div className='businessCard'>
           <img src={jimPhoto} alt='Profile' />
           <h2>James A. Stiltner</h2>
           <a href='tel:7199643526'>719-964-3526</a> <br />
           <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
         </div>
+        <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo'/>
         <div className='contactUsContainer'>
           <div className="contactUsText">
             Contact Us
