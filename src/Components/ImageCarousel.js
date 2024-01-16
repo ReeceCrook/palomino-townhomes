@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 
 function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
+    const [isFullscreen, setIsFullscreen] = useState(false);
     
     useEffect(() => {
         const fullscreenHandler = () => {
           const homeTabs = document.querySelector('.homeTabs');
           const navTabs = document.querySelector('.dropdown');
     
-          if ((document.fullscreenElement || document.webkitFullscreenElement)) {
+          if (isFullscreen) {
             if (homeTabs) homeTabs.classList.add('hidden');
             if (navTabs) navTabs.classList.add('hidden');
           } else {
@@ -19,18 +20,17 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
           }
         };
     
-        const fullscreenChangeHandler = () => {
+        const orientationChangeHandler = () => {
+          setIsFullscreen(window.innerWidth < window.innerHeight);
           fullscreenHandler();
         };
     
-        document.addEventListener('fullscreenchange', fullscreenChangeHandler);
-        document.addEventListener('webkitfullscreenchange', fullscreenChangeHandler);
+        window.addEventListener('orientationchange', orientationChangeHandler);
     
         return () => {
-          document.removeEventListener('fullscreenchange', fullscreenChangeHandler);
-          document.removeEventListener('webkitfullscreenchange', fullscreenChangeHandler);
+          window.removeEventListener('orientationchange', orientationChangeHandler);
         };
-      }, []);
+      }, [isFullscreen]);
 
 
     return (
