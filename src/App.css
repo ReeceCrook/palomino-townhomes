@@ -29,7 +29,6 @@ body {
   float: right;
   margin-top: 10%;
   margin-right: 10px;
-  z-index: 1001;
 }
 
 .dropdown {
@@ -39,7 +38,6 @@ body {
   float: right;
   margin-top: 10%;
   margin-right: 10px;
-  z-index: 1001;
 }
 
 .dropdown a {
