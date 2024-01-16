@@ -35,16 +35,23 @@ html, body {
   right: 0;
 }
 
-.dropdown {
+.navTabs {
+  margin-right: 10px;
+  position: fixed;
+  top: 20%;
+  right: 0;
+}
+.navTabs a {
+  text-decoration: none;
+}
+
+.whiteBGNav {
   margin-right: 10px;
   position: fixed;
   top: 20%;
   right: 0;
   background-color: white;
   border-radius: 15px;
-}
-.dropdown a {
-  text-decoration: none;
 }
 
 .iconsWrapper figcaption {
@@ -153,12 +160,19 @@ figure:hover img {
     display: flex;
     position: relative;
   }
-  .dropdown {
+  .navTabs {
     display: inline-block;
     top: 13%;
     left: 76%;
     width: 25%;
   }
+  .whiteBGNav {
+    display: inline-block;
+    top: 13%;
+    left: 76%;
+    width: 25%;
+  }
+  
   .palominoLogo {
     width: 100%;
     height: auto;

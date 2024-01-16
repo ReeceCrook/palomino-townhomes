@@ -10,10 +10,13 @@ import "../App.css"
 function NavBar() {
     const navigate = useNavigate()
     const location = useLocation();
-    const isHome = location.pathname === '/';
+    const home = location.pathname === '/';
+    const floorPlans = location.pathname === '/floorPlans'
+    const directions = location.pathname === '/directions'
+    const contactUs = location.pathname === '/contactUs'
 
     return (
-        <div className={`tabs ${isHome ? 'homeTabs' : 'dropdown'}`}>
+        <div className={`tabs ${home ? 'homeTabs' : (floorPlans || contactUs || directions) ? 'navTabs': 'whiteBGNav'}`}>
             <NavLink 
                 to="/" 
                 activeclassname="active"

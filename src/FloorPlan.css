@@ -1,11 +1,11 @@
 .floorPlanWrapper {
-    display: inline-flex;
-    height: 100%;
-    width: 100%;
-    outline: auto;
-    padding-bottom: 20%;
-    background-color: #bd915b;
-  }
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  outline: auto;
+  padding-bottom: 20%;
+  background-color: #bd915b;
+}
   
 .card1, .card2, .card3 {
   background-color: white;
@@ -26,7 +26,7 @@
   height: 20%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .cardTextDiv {
     padding-bottom: 25px;
   }
