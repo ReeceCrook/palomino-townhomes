@@ -8,12 +8,10 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
           const homeTabs = document.querySelector('.homeTabs');
           const navTabs = document.querySelector('.dropdown');
     
-          if (document.fullscreenElement) {
-            console.log("in if")
+          if ((document.fullscreenElement || document.webkitFullscreenElement)) {
             if (homeTabs) homeTabs.classList.add('hidden');
             if (navTabs) navTabs.classList.add('hidden');
           } else {
-            console.log("in else")
             if (homeTabs) homeTabs.classList.remove('hidden');
             if (navTabs && navTabs.classList.contains('hidden')) {
               navTabs.classList.remove('hidden');
@@ -26,9 +24,11 @@ function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
         };
     
         document.addEventListener('fullscreenchange', fullscreenChangeHandler);
+        document.addEventListener('webkitfullscreenchange', fullscreenChangeHandler);
     
         return () => {
           document.removeEventListener('fullscreenchange', fullscreenChangeHandler);
+          document.removeEventListener('webkitfullscreenchange', fullscreenChangeHandler);
         };
       }, []);
 
