@@ -22,7 +22,7 @@ html, body {
 
 .homeImageGalleryWrapper {
   display: inline-block;
-  width: 50%;
+  width: 60%;
   .image-gallery-left-nav, .image-gallery-right-nav {
     margin: 0 -100px;
   } 
@@ -172,7 +172,7 @@ figure:hover img {
     left: 76%;
     width: 25%;
   }
-  
+   
   .palominoLogo {
     width: 100%;
     height: auto;

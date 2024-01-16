@@ -11,6 +11,7 @@ import img9 from './assets/HomePagePics/bcdIvlx2Q96qh7bL02FqnA_thumb_364d.jpg'
 import img12 from './assets/HomePagePics/41+5rAJwR8GrQ+p82L5Zqg_thumb_3646.jpg'
 import img13 from './assets/HomePagePics/4-web-or-mls-DJI_0464.jpg'
 import img14 from './assets/HomePagePics/1-web-or-mls-DJI_0449.jpg'
+import buyerIncentive from './assets/HomePagePics/firstTimeHomebuyer.png'
 
 import card1img1 from './assets/FloorPlans/card1/Model 1551L-Main-8.8.23.jpg'
 import card1img2 from './assets/FloorPlans/card1/Model 1551L- Upper.jpg'
@@ -45,54 +46,60 @@ const homeImages = [
     },
     {
         'id': 4,
+        'original': buyerIncentive,
+        "thumbnail": buyerIncentive,
+        'originalClass': 'homeImgs'
+    },
+    {
+        'id': 5,
         'original': img4,
         "thumbnail": img4,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 5,
+        'id': 6,
         'original': img8,
         "thumbnail": img8,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 6,
+        'id': 7,
         'original': img6,
         "thumbnail": img6,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 7,
+        'id': 8,
         'original': img5,
         "thumbnail": img5,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 8,
+        'id': 9,
         'original': img7,
         "thumbnail": img7,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 9,
+        'id': 10,
         'original': img9,
         "thumbnail": img9,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 12,
+        'id': 11,
         'original': img12,
         "thumbnail": img12,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 13,
+        'id': 12,
         'original': img13,
         "thumbnail": img13,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 14,
+        'id': 13,
         'original': img14,
         "thumbnail": img14,
         'originalClass': 'homeImgs'
