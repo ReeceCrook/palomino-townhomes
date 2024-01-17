@@ -13,11 +13,12 @@ function FloorPlans() {
         <div className='cardTextDiv'>
           <h2>3 Bedroom 2.5 Bath</h2>
           <p>
+            Master on the Main<br />
             Unfinished Basement<br />
-            1 car detached garage
+            2 car detached garage
           </p>
         </div>
-        <ImageCarousel pics={floorPlanImages[0]} showFullscreenButton={true} />
+        <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={true} />
       </div>
       <div className='card2'>
         <div className='cardTextDiv'>
@@ -33,12 +34,11 @@ function FloorPlans() {
         <div className='cardTextDiv'>
           <h2>3 Bedroom 2.5 Bath</h2>
           <p>
-            Master on the Main<br />
             Unfinished Basement<br />
-            2 car detached garage
+            1 car detached garage
           </p>
         </div>
-        <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={true} />
+        <ImageCarousel pics={floorPlanImages[0]} showFullscreenButton={true} />
       </div>
     </div>
   )

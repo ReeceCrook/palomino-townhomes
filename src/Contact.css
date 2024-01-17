@@ -132,9 +132,13 @@ form .formRow .inputData{
     left: 3%;
     width: 8%;
   }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1800px) {
+  .mbLogo {
+    margin-left: 17%;
+  }
   .businessCard {
     width: 14%;
     top: 35%;

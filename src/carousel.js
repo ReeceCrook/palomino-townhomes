@@ -52,26 +52,26 @@ const homeImages = [
     },
     {
         'id': 5,
+        'original': img5,
+        "thumbnail": img5,
+        'originalClass': 'homeImgs'
+    },
+    {
+        'id': 6,
         'original': img4,
         "thumbnail": img4,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 6,
+        'id': 7,
         'original': img8,
         "thumbnail": img8,
         'originalClass': 'homeImgs'
     },
     {
-        'id': 7,
+        'id': 8,
         'original': img6,
         "thumbnail": img6,
-        'originalClass': 'homeImgs'
-    },
-    {
-        'id': 8,
-        'original': img5,
-        "thumbnail": img5,
         'originalClass': 'homeImgs'
     },
     {
