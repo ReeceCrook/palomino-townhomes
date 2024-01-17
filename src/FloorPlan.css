@@ -23,12 +23,12 @@
 .cardTextDiv {
   border-bottom: solid;
   border-width: 3px;
-  height: 20%;
+  height: 21%;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1366px) {
+@media only screen and (min-width: 601px) and (max-width: 1800px) {
   .cardTextDiv {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
 }
