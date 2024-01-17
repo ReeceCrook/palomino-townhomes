@@ -1,8 +1,8 @@
 {
   "name": "masterbilt",
   "homepage": "https://palomino-townhomes.com",
-  "version": "0.1.0",
-  "private": false,
+  "version": "1.0.1",
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-google-maps/api": "^2.19.2",

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ImageGallery from "react-image-gallery";
 
 function ImageCarousel({ pics, showFullscreenButton=true, onClick=null  }){
