@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import Logo from '../assets/mainPics/PalominoRanch-Logotype.png'
 import ImageCarousel from './ImageCarousel'
 import { homeImages } from '../images'
@@ -6,6 +6,15 @@ import { homeImages } from '../images'
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [filteredImages, setFilteredImages] = useState([]);
+  const img = homeImages.filter(current => current.id === 4)
+
+  const filterImages = useCallback(() => {
+    if (isMobile) {
+      setFilteredImages(homeImages.filter(current => current.id !== 4));
+    } else {
+      setFilteredImages(homeImages);
+    }
+  }, [isMobile]);
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -24,22 +33,13 @@ function Home() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [filterImages]);
 
   useEffect(() => {
     filterImages();
-  }, [isMobile]);
+  }, [isMobile, filterImages]);
+  
 
-  const filterImages = () => {
-    if (isMobile) {
-      setFilteredImages(homeImages.filter(current => current.id !== 4));
-    } else {
-      setFilteredImages(homeImages);
-    }
-  };
-
-  const img = homeImages.filter(current => current.id === 4)
-  console.log(img[0].original)
   return (
     <div className='homeDiv'>
       <img src={Logo} alt='palomino Logo' className='palominoLogo' />
