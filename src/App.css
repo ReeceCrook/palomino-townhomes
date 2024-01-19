@@ -146,13 +146,20 @@ figure:hover img {
   font-size: x-large;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+.firstTimeIncentive {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1800px) {
   .backroundImgDiv {
     background-position: center;
   }
+  .homeImageGalleryWrapper {
+    width: 50%;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   .backroundImgDiv {
     background-image: none;
   }

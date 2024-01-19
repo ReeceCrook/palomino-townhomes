@@ -1,6 +1,6 @@
 import React from 'react'
 import '../FloorPlan.css'
-import { floorPlanImages } from '../carousel'
+import { floorPlanImages } from '../images.js'
 import ImageCarousel from './ImageCarousel'
  
 
