@@ -15,7 +15,7 @@ function FloorPlans() {
           <p>
             Master on the Main<br />
             Unfinished Basement<br />
-            2 car detached garage
+            Optional 2 car detached garage
           </p>
         </div>
         <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={true} />
