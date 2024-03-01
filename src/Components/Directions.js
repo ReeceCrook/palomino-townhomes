@@ -14,7 +14,7 @@ function Directions() {
     lat: 38.90873105888053,
     lng: -104.71440132092197,
   };
-  
+
   return (
     <div className='directionsWrapper'>
       <h1>Directions</h1>
@@ -30,7 +30,7 @@ function Directions() {
         </GoogleMap>
       </LoadScript>
       <a 
-        href='https://maps.app.goo.gl/EcgYFXicVBbLoUsh6' 
+        href='https://maps.app.goo.gl/n6xQhkay1Xtk9vbG9' 
         target='_blank' 
         rel="noopener noreferrer"
         className='mapDirectionsATag'
