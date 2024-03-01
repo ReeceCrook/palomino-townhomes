@@ -11,10 +11,10 @@ function Directions() {
   };
 
   const center = {
-    lat: 38.90859237820933,
-    lng: -104.71451754110377,
+    lat: 38.90873105888053,
+    lng: -104.71440132092197,
   };
-
+  
   return (
     <div className='directionsWrapper'>
       <h1>Directions</h1>
@@ -36,7 +36,7 @@ function Directions() {
         className='mapDirectionsATag'
       >
         Palomino Townhomes<br />
-        5249 Palomino Ranch Point<br />
+        5217 Palomino Ranch Point<br />
         Colorado Springs, Co. 80922
       </a>
     </div>

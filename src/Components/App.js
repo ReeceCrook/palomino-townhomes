@@ -18,10 +18,10 @@ function App() {
       <NavBar />
       <Suspense fallback={<Loading />}>
         <Routes>
-          <Route path="/floorPlans" element={<FloorPlans />} />
-          <Route path="/communityInfo" element={<CommunityInfo />} />
-          <Route path="/directions" element={<Directions />} />
-          <Route path="/contactUs" element={<Contact />} />
+          <Route exact path="/floor-plans" element={<FloorPlans />} />
+          <Route exact path="/community-info" element={<CommunityInfo />} />
+          <Route exact path="/directions" element={<Directions />} />
+          <Route exact path="/contact-us" element={<Contact />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
       </Suspense>
