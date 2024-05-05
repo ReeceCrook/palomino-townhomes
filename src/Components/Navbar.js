@@ -81,19 +81,22 @@ function NavBar() {
                     </button>
                 </figure>
             </NavLink>
-            <a
-                href='https://www.facebook.com/MasterbiltHomes'
-                target='_blank'
-                rel="noopener noreferrer"
-                className="facebookButtonNav"
-            >
-                <figure className="iconsWrapper">
-                    <button className="iconButtons">
-                        <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" />
-                        <figcaption>Visit Our Facebook Page</figcaption>
-                    </button>
-                </figure>
-            </a>
+            {location.pathname !== '/contact-us' ? (
+                <a
+                    href='https://www.facebook.com/MasterbiltHomes'
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    className="facebookButtonNav"
+                >
+                    <figure className="iconsWrapper facebookNavWrapper">
+                        <button className="iconButtons facebookIcon">
+                            <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" />
+                            <figcaption>Visit Our Facebook Page</figcaption>
+                        </button>
+                    </figure>
+                </a>
+            ) : null}
+
         </div>
     );
 }
