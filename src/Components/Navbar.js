@@ -91,7 +91,6 @@ function NavBar() {
                     <figure className="iconsWrapper facebookNavWrapper">
                         <button className="iconButtons facebookIcon">
                             <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" />
-                            {/* <figcaption>Visit Our Facebook Page</figcaption> */}
                         </button>
                     </figure>
                 </a>
