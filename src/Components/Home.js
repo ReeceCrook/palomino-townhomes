@@ -3,6 +3,7 @@ import Logo from '../assets/mainPics/PalominoRanch-Logotype.png'
 import ImageCarousel from './ImageCarousel'
 import { homeImages } from '../images'
 
+
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [filteredImages, setFilteredImages] = useState([]);
@@ -38,19 +39,19 @@ function Home() {
   useEffect(() => {
     filterImages();
   }, [isMobile, filterImages]);
-  
 
   return (
     <div className='homeDiv'>
       <img src={Logo} alt='palomino Logo' className='palominoLogo' />
       <div className='homeImageGalleryWrapper'>
-        <ImageCarousel pics={filteredImages}  />
+        <ImageCarousel pics={filteredImages} />
       </div>
       <div>
         {filteredImages === homeImages ? null :
           <img src={img[0].original} alt='First Time Home Buyer Incentive' className='firstTimeIncentive'></img>
         }
       </div>
+
     </div>
   )
 }

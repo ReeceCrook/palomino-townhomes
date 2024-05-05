@@ -33,9 +33,9 @@ const homeImages = [
         'originalClass': 'homeImgs',
     },
     {
-        'id': 2,
-        'original': img3,
-        "thumbnail": img3,
+        'id': 4,
+        'original': buyerIncentive,
+        "thumbnail": buyerIncentive,
         'originalClass': 'homeImgs'
     },
     {
@@ -45,9 +45,9 @@ const homeImages = [
         'originalClass': 'homeImgs'
     },
     {
-        'id': 4,
-        'original': buyerIncentive,
-        "thumbnail": buyerIncentive,
+        'id': 2,
+        'original': img3,
+        "thumbnail": img3,
         'originalClass': 'homeImgs'
     },
     {

@@ -5,6 +5,8 @@ import floorPlansIcon from '../assets/Icons/blueprint.png'
 import directionsIcon from "../assets/Icons/direction.png";
 import communityInfoIcon from "../assets/Icons/info.png";
 import contactUsIcon from '../assets/Icons/contact-us.png'
+import facebookLogo from "../assets/mainPics/Facebook_Logo_Primary.png"
+
 import "../App.css"
 
 function NavBar() {
@@ -16,9 +18,9 @@ function NavBar() {
     const contactUs = location.pathname === '/contact-us'
 
     return (
-        <div className={`tabs ${home ? 'homeTabs' : (floorPlans || contactUs || directions) ? 'navTabs': 'whiteBGNav'}`}>
-            <NavLink 
-                to="/" 
+        <div className={`tabs ${home ? 'homeTabs' : (floorPlans || contactUs || directions) ? 'navTabs' : 'whiteBGNav'}`}>
+            <NavLink
+                to="/"
                 activeclassname="active"
                 exact="true"
             >
@@ -51,7 +53,7 @@ function NavBar() {
                         <img src={directionsIcon} alt="Directions icon" onClick={() => navigate('/directions')} className="icons" />
                         <figcaption>Directions</figcaption>
                     </button>
-                    
+
                 </figure>
             </NavLink>
             <NavLink
@@ -64,7 +66,7 @@ function NavBar() {
                         <img src={communityInfoIcon} alt="Community Info icon" onClick={() => navigate('/community-info')} className="icons" />
                         <figcaption>Community Info</figcaption>
                     </button>
-                    
+
                 </figure>
             </NavLink>
             <NavLink
@@ -79,6 +81,19 @@ function NavBar() {
                     </button>
                 </figure>
             </NavLink>
+            <a
+                href='https://www.facebook.com/MasterbiltHomes'
+                target='_blank'
+                rel="noopener noreferrer"
+                className="facebookButtonNav"
+            >
+                <figure className="iconsWrapper">
+                    <button className="iconButtons">
+                        <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" />
+                        <figcaption>Visit Our Facebook Page</figcaption>
+                    </button>
+                </figure>
+            </a>
         </div>
     );
 }

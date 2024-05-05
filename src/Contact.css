@@ -1,31 +1,34 @@
-.contactUsWrapper{
+.contactUsWrapper {
   display: inline-block;
 }
-.contactUsContainer{
+
+.contactUsContainer {
   position: relative;
   background: #fff;
   padding: 25px 40px 10px 40px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   color: black;
   background-color: white;
   font-family: 'Poppins', sans-serif;
   width: 85%;
 }
 
-.contactUsContainer .contactUsText{
+.contactUsContainer .contactUsText {
   text-align: center;
   font-size: 41px;
   font-weight: 600;
 }
-.contactUsContainer form{
+
+.contactUsContainer form {
   padding: 30px 0 0 0;
 }
 
-.contactUsContainer form .formRow{
+.contactUsContainer form .formRow {
   display: flex;
   margin: 32px 0;
 }
-form .formRow .inputData{
+
+form .formRow .inputData {
   width: 100%;
   height: 40px;
   margin: 0 20px;
@@ -33,27 +36,29 @@ form .formRow .inputData{
 }
 
 .inputData input,
-.textarea textarea{
+.textarea textarea {
   display: block;
   width: 100%;
   height: 100%;
   border: none;
   font-size: 17px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  border-bottom: 2px solid rgba(0,0,0, 0.26);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
 }
 
-.textarea textarea{
+.textarea textarea {
   resize: none;
   padding-top: 10px;
 }
-.inputData label{
+
+.inputData label {
   position: sticky;
   float: left;
   pointer-events: none;
   bottom: 10px;
   font-size: 16px;
 }
+
 .submitBtn {
   border: none;
 }
@@ -139,11 +144,13 @@ form .formRow .inputData{
   .mbLogo {
     margin-left: 12%;
   }
+
   .businessCard {
     width: 14%;
     top: 35%;
     left: 1%;
   }
+
   .contactUsContainer {
     margin-left: 90px;
   }
@@ -154,21 +161,24 @@ form .formRow .inputData{
   .contactUsContainer {
     display: none;
   }
+
   .mbLogo {
     width: 100%;
   }
+
   .businessCard {
     position: relative;
     width: 60%;
-    top: 18%;
+    margin-top: 5px;
     left: 10%;
   }
+
   .contactUsWrapper {
     display: flex;
     margin-right: 30%;
     flex-direction: column;
   }
-  
+
   .formRow {
     flex-direction: column;
   }
@@ -204,6 +214,7 @@ form .formRow .inputData{
   }
 
   .facebookButton {
+    margin-top: 35px;
     width: 55%;
     position: absolute;
     background-color: #1877f2;
@@ -213,5 +224,5 @@ form .formRow .inputData{
     left: 0%;
   }
 
-  
+
 }
