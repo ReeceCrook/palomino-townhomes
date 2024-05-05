@@ -6,7 +6,6 @@ import "../Contact.css"
 import jimPhoto from "../assets/mainPics/jim.jpg"
 import mbLogo from "../assets/mainPics/MB-logo.png"
 import facebookLogo from "../assets/mainPics/Facebook_Logo_Primary.png"
-import bbbRating from "../assets/mainPics/BBBrating.png"
 
 function Contact() {
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -30,7 +29,7 @@ function Contact() {
     },
     validationSchema: formSchema,
     onSubmit: (values) => {
-      const formElement = document.querySelector('form'); // Adjust the selector if needed
+      const formElement = document.querySelector('form');
       emailjs
         .sendForm('service_pda4dyn', 'template_4npi60d', formElement, 'JiyFMUBN4XcgzPCpE')
         .then((result) => {
@@ -154,13 +153,13 @@ function Contact() {
           <img src={facebookLogo} alt="Facebook Logo" className="facebookLogo" />
           <span>Visit Our Facebook Page</span>
         </a>
-        <a
-          href='https://www.bbb.org/us/co/palmer-lake/profile/building-contractors/masterbilt-homes-0785-5281152#sealclick'
-          target='_blank'
-          rel="noopener noreferrer"
+        <a href="https://www.bbb.org/us/co/palmer-lake/profile/building-contractors/masterbilt-homes-0785-5281152/#sealclick"
+          target="_blank"
+          rel="noreferrer"
           className='bbbRating'
         >
-          <img src={bbbRating} alt="BBB Logo" className="bbbLogo" />
+          <img src="https://seal-southerncolorado.bbb.org/seals/darkgray-seal-200-65-bbb-5281152.png"
+            alt="Masterbilt Homes BBB Business Review" />
         </a>
       </div>
     </div>

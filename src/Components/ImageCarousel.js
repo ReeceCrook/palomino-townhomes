@@ -12,7 +12,9 @@ function ImageCarousel({ pics, showFullscreenButton = true, onClick = null }) {
         toggleFullScreen();
     };
 
-    console.log(isFullScreen)
+    if (isFullScreen) {
+        showFullscreenButton = false
+    }
 
     return (
         <div className={isFullScreen ? 'fullscreen' : 'carousel-wrapper'}>

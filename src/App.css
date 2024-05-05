@@ -195,13 +195,11 @@ figure:hover img {
     margin-bottom: 40px;
 
     .facebookNavWrapper {
-      position: fixed;
+      position: relative;
       left: 0%;
       top: 10%;
     }
   }
-
-
 
   .navTabs {
     display: inline-block;
