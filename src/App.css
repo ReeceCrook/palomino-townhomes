@@ -32,7 +32,6 @@ body {
 }
 
 .homeTabs {
-  z-index: 1001;
   margin-right: 10px;
   position: fixed;
   top: 20%;
@@ -40,7 +39,6 @@ body {
 }
 
 .navTabs {
-  z-index: 1001;
   margin-right: 10px;
   position: fixed;
   top: 20%;
@@ -179,9 +177,7 @@ figure:hover img {
     background-position: center;
   }
 
-  .homeImageGalleryWrapper {
-    width: 50%;
-  }
+
 }
 
 @media only screen and (max-width: 770px) {
