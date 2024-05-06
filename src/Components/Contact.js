@@ -47,7 +47,7 @@ function Contact() {
   return (
     <div className='contactUsWrapper'>
       <div className='businessCard'>
-        <img src={jimPhoto} alt='Profile' />
+        <img src={jimPhoto} alt="Jim's Masterbilt Profile" />
         <h2>James A. Stiltner</h2>
         <a href='tel:7199643526'>719-964-3526</a> <br />
         <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
@@ -150,7 +150,7 @@ function Contact() {
           rel="noopener noreferrer"
           className="facebookButton"
         >
-          <img src={facebookLogo} alt="Facebook Logo" className="facebookLogo" />
+          <img src={facebookLogo} alt="Masterbilt Townhomes Facebook Logo" className="facebookLogo" />
           <span>Visit Our Facebook Page</span>
         </a>
         <a href="https://www.bbb.org/us/co/palmer-lake/profile/building-contractors/masterbilt-homes-0785-5281152/#sealclick"
@@ -159,7 +159,7 @@ function Contact() {
           className='bbbRating'
         >
           <img src="https://seal-southerncolorado.bbb.org/seals/darkgray-seal-200-65-bbb-5281152.png"
-            alt="Masterbilt Homes BBB Business Review" />
+            alt="Masterbilt Homes BBB Review" />
         </a>
       </div>
     </div>

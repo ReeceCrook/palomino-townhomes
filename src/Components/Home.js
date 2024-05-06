@@ -42,7 +42,7 @@ function Home() {
 
   return (
     <div className='homeDiv'>
-      <img src={Logo} alt='palomino Logo' className='palominoLogo' />
+      <img src={Logo} alt='palomino ranch townhomes logo' className='palominoLogo' />
       <div className='homeImageGalleryWrapper'>
         <ImageCarousel pics={filteredImages} />
       </div>

@@ -26,7 +26,7 @@ function NavBar() {
             >
                 <figure className="iconsWrapper">
                     <button className="iconButtons">
-                        <img src={homeIcon} alt="home icon" onClick={() => navigate('/')} className="icons" />
+                        <img src={homeIcon} alt="townhome icon" onClick={() => navigate('/')} className="icons" />
                         <figcaption>Home</figcaption>
                     </button>
                 </figure>
@@ -38,7 +38,7 @@ function NavBar() {
             >
                 <figure className="iconsWrapper">
                     <button className="iconButtons">
-                        <img src={floorPlansIcon} alt="Floor Plan icon" onClick={() => navigate('/floor-plans')} className="icons" />
+                        <img src={floorPlansIcon} alt="TownHomes Floor Plan icon" onClick={() => navigate('/floor-plans')} className="icons" />
                         <figcaption>Floor Plans</figcaption>
                     </button>
                 </figure>
@@ -50,7 +50,7 @@ function NavBar() {
             >
                 <figure className="iconsWrapper">
                     <button className="iconButtons">
-                        <img src={directionsIcon} alt="Directions icon" onClick={() => navigate('/directions')} className="icons" />
+                        <img src={directionsIcon} alt="Townhomes Directions icon" onClick={() => navigate('/directions')} className="icons" />
                         <figcaption>Directions</figcaption>
                     </button>
 
@@ -63,7 +63,7 @@ function NavBar() {
             >
                 <figure className="iconsWrapper">
                     <button className="iconButtons">
-                        <img src={communityInfoIcon} alt="Community Info icon" onClick={() => navigate('/community-info')} className="icons" />
+                        <img src={communityInfoIcon} alt="townhomes Community Info icon" onClick={() => navigate('/community-info')} className="icons" />
                         <figcaption>Community Info</figcaption>
                     </button>
 
@@ -76,7 +76,7 @@ function NavBar() {
             >
                 <figure className="iconsWrapper">
                     <button className="iconButtons">
-                        <img src={contactUsIcon} alt="Contact Us icon" onClick={() => navigate('/contact-us')} className="icons" />
+                        <img src={contactUsIcon} alt="Masterbilt Contact Us icon" onClick={() => navigate('/contact-us')} className="icons" />
                         <figcaption>Contact Us</figcaption>
                     </button>
                 </figure>

@@ -177,7 +177,9 @@ figure:hover img {
     background-position: center;
   }
 
-
+  .homeImageGalleryWrapper {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 770px) {
