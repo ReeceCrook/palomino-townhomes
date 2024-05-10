@@ -5,7 +5,7 @@ import floorPlansIcon from '../assets/Icons/blueprint.png'
 import directionsIcon from "../assets/Icons/direction.png";
 import communityInfoIcon from "../assets/Icons/info.png";
 import contactUsIcon from '../assets/Icons/contact-us.png';
-import facebookLogo from "../assets/Icons/play-circle.png";
+import facebookLogo from "../assets/Icons/play.png";
 
 import "../App.css"
 

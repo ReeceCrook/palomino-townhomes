@@ -194,8 +194,12 @@ figure:hover img {
 
     .facebookNavWrapper {
       position: relative;
-      right: 400%;
+      right: 350%;
       top: 65%;
+
+      .facebookLogoNav {
+        max-width: 80%;
+      }
     }
   }
 
