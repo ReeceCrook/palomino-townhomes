@@ -32,7 +32,7 @@ function CommunityInfo() {
         </div>
       </div>
     </div>
-    
+
   );
 }
 
