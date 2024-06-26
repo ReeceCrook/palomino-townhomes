@@ -251,3 +251,20 @@ figure:hover img {
     padding: 0%;
   }
 }
+
+.circle {
+  position: absolute;
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #08966e;
+  border-radius: 50%;
+  margin-left: 5px;
+  top: 90%;
+}
+
+.mobile-circle {
+  border: 5px solid #08966e;
+  margin-top: 78%;
+}
+
