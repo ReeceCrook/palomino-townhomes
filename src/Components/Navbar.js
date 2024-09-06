@@ -81,21 +81,21 @@ function NavBar() {
                     </button>
                 </figure>
             </NavLink>
-            {location.pathname !== '/contact-us' ? (
-                <a
-                    href='https://www.facebook.com/reel/370942789140592'
-                    target='_blank'
-                    rel="noopener noreferrer"
-                    className="facebookButtonNav"
-                >
-                    <figure className="iconsWrapper facebookNavWrapper">
-                        <button className="iconButtons facebookIcon">
-                            <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" /><br />
-                            <figcaption>Play Video</figcaption>
-                        </button>
-                    </figure>
-                </a>
-            ) : null}
+
+            <a
+                href='https://www.facebook.com/reel/370942789140592'
+                target='_blank'
+                rel="noopener noreferrer"
+                className="facebookButtonNav"
+            >
+                <figure className="iconsWrapper facebookNavWrapper">
+                    <button className="iconButtons facebookIcon">
+                        <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" /><br />
+                        <figcaption>Play Video</figcaption>
+                    </button>
+                </figure>
+            </a>
+
 
         </div>
     );
