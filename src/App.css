@@ -258,12 +258,19 @@ figure:hover img {
   width: 200px;
   height: 200px;
   border: 5px solid #08966e;
-  border-radius: 50%;
+  border-radius: 5px;
   margin-left: 20px;
-  top: 60%;
+  top: 35%;
 }
 
 .mobile-circle {
-  border: 5px solid #08966e;
-  margin-top: 85%;
+  border: 2px solid;
+  border-color: #00B353;
+  background-color: rgba(0, 179, 83, 0.1);
+  margin-top: 84%;
+  height: 170px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 5px 5px gray;
 }

@@ -46,12 +46,12 @@ function Home() {
         <ImageCarousel pics={homeImages} />
       </div>
       <div className={`${isMobile ? 'mobile-circle' : 'circle'}`}>
-          <p style={{ fontSize: "35px", marginTop: "45px"}}>
-            Model Open<br/>
-            Wed-Sun<br/>
-            12p-5p
-          </p>
-        </div>
+        <p style={{ fontSize: "35px" }}>
+          Model Open<br />
+          Wed-Sun<br />
+          12p-5p
+        </p>
+      </div>
       {/* <div>
         {filteredImages === homeImages ? null :
           <img src={img[0].original} alt='First Time Home Buyer Incentive' className='firstTimeIncentive'></img>
