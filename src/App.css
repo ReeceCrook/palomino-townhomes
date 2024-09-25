@@ -172,6 +172,28 @@ figure:hover img {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.info-box {
+  background-color: rgb(255, 255, 0);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: auto;
+  width: 20%;
+}
+
+.info-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.info-message {
+  flex-grow: 1;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1800px) {
   .backroundImgDiv {
     background-position: center;
@@ -183,6 +205,10 @@ figure:hover img {
 }
 
 @media only screen and (max-width: 770px) {
+  .info-box {
+    width: 100%;
+  }
+
   .backroundImgDiv {
     background-image: none;
   }
@@ -258,7 +284,7 @@ figure:hover img {
   width: 200px;
   height: 200px;
   border: 5px solid #08966e;
-  border-radius: 5px;
+  border-radius: 50%;
   margin-left: 20px;
   top: 35%;
 }
