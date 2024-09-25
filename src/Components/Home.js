@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../assets/mainPics/PalominoRanch-Logotype.png'
 import ImageCarousel from './ImageCarousel'
 import { homeImages } from '../images'
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -49,14 +50,10 @@ function Home() {
         <p style={{ fontSize: "35px" }}>
           Model Open<br />
           Wed-Sun<br />
-          12p-5p
+          12p-5p<br />
+          <Link to="/directions" style={{ fontSize: "20px" }}>Directions</Link>
         </p>
       </div>
-      {/* <div>
-        {filteredImages === homeImages ? null :
-          <img src={img[0].original} alt='First Time Home Buyer Incentive' className='firstTimeIncentive'></img>
-        }
-      </div> */}
     </div>
   )
 }

@@ -281,8 +281,8 @@ figure:hover img {
 .circle {
   position: absolute;
   float: left;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border: 5px solid #08966e;
   border-radius: 50%;
   margin-left: 20px;
@@ -299,4 +299,5 @@ figure:hover img {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 10px 5px 5px gray;
+  padding-bottom: 9%;
 }
