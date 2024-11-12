@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
+import { GoogleMap, MarkerF } from '@react-google-maps/api';
 
 
 function Directions() {
@@ -14,26 +14,23 @@ function Directions() {
     lat: 38.90873105888053,
     lng: -104.71440132092197,
   };
-
   return (
     <div className='directionsWrapper'>
       <h1>Directions</h1>
-      <LoadScript
-        googleMapsApiKey="AIzaSyB3cApC-B3MXt39hL_s8fyaA3l0Jn_I8rY"
+
+      <GoogleMap
+        mapContainerStyle={mapContainerStyle}
+        center={center}
+        zoom={15}
       >
-        <GoogleMap
-          mapContainerStyle={mapContainerStyle}
-          center={center}
-          zoom={15}
-        >
-          <MarkerF position={center} />
-        </GoogleMap>
-      </LoadScript>
+        <MarkerF position={center} />
+      </GoogleMap>
       <a
         href='https://maps.app.goo.gl/n6xQhkay1Xtk9vbG9'
         target='_blank'
         rel="noopener noreferrer"
         className='mapDirectionsATag'
+        aria-label="Open Google Maps for Palomino Townhomes"
       >
         Palomino Townhomes<br />
         5217 Palomino Ranch Point<br />
