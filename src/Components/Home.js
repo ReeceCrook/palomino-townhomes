@@ -33,10 +33,9 @@ function Home() {
         <ImageCarousel pics={homeImages} />
       </div>
       <div className={`${isMobile ? 'mobile-circle' : 'circle'}`}>
-        <p style={{ fontSize: "30px" }}>
-          Model Open<br />
-          Wed-Sun<br />
-          By Appointment<br />
+        <p style={{ fontSize: "175%", marginTop: "20%" }}>
+          Call to tour our model!<br />
+          <a href="tel:PHONE_NUM">719-964-3526</a><br />
           <Link to="/directions" style={{ fontSize: "20px" }}>Directions</Link>
         </p>
       </div>
