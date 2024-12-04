@@ -33,7 +33,7 @@ function Home() {
         <ImageCarousel pics={homeImages} />
       </div>
       <div className={`${isMobile ? 'mobile-circle' : 'circle'}`}>
-        <p style={{ fontSize: "35px" }}>
+        <p style={{ fontSize: "30px" }}>
           Model Open<br />
           Wed-Sun<br />
           By Appointment<br />
