@@ -7,16 +7,6 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
-  // const [filteredImages, setFilteredImages] = useState([]);
-  // const img = homeImages.filter(current => current.id === 4)
-
-  // const filterImages = useCallback(() => {
-  //   if (isMobile) {
-  //     setFilteredImages(homeImages.filter(current => current.id !== 4));
-  //   } else {
-  //     setFilteredImages(homeImages);
-  //   }
-  // }, [isMobile]);
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -25,7 +15,6 @@ function Home() {
 
     const handleResize = () => {
       checkIsMobile();
-      // filterImages();
     };
 
     checkIsMobile();
@@ -36,9 +25,6 @@ function Home() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  // useEffect(() => {
-  //   filterImages();
-  // }, [isMobile, filterImages]);
 
   return (
     <div className='homeDiv'>
@@ -50,7 +36,7 @@ function Home() {
         <p style={{ fontSize: "35px" }}>
           Model Open<br />
           Wed-Sun<br />
-          12p-5p<br />
+          By Appointment<br />
           <Link to="/directions" style={{ fontSize: "20px" }}>Directions</Link>
         </p>
       </div>
