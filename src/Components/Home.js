@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../assets/mainPics/PalominoRanch-Logotype.png'
 import ImageCarousel from './ImageCarousel'
 import { homeImages } from '../images'
-import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -33,10 +32,9 @@ function Home() {
         <ImageCarousel pics={homeImages} />
       </div>
       <div className={`${isMobile ? 'mobile-circle' : 'circle'}`}>
-        <p style={{ fontSize: "175%", marginTop: "20%" }}>
+        <p style={{ fontSize: "195%", marginTop: "20%" }}>
           Call to tour our model!<br />
           <a href="tel:PHONE_NUM">719-964-3526</a><br />
-          <Link to="/directions" style={{ fontSize: "20px" }}>Directions</Link>
         </p>
       </div>
     </div>
