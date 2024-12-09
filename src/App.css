@@ -185,11 +185,16 @@ figcaption {
   height: 100%;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.9);
+  touch-action: none;
 }
 
 .fullscreen img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.carousel-wrapper {
+  touch-action: none;
 }
 
 .carousel-wrapper img {
