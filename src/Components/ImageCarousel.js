@@ -1,17 +1,17 @@
 import React, { useState, useRef } from "react";
 import ImageGallery from "react-image-gallery";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 function ImageCarousel({ pics, showFullscreenButton = true }) {
     const [isFullScreen, setIsFullScreen] = useState(false);
     const galleryRef = useRef(null);
 
-    // Toggles fullscreen mode by triggering the gallery's fullscreen method
     const toggleFullScreen = () => {
         if (galleryRef.current) {
             if (!isFullScreen) {
-                galleryRef.current.fullScreen(); // Enter fullscreen
+                galleryRef.current.fullScreen();
             } else {
-                document.exitFullscreen(); // Exit fullscreen
+                document.exitFullscreen();
             }
         }
     };
@@ -20,7 +20,6 @@ function ImageCarousel({ pics, showFullscreenButton = true }) {
         toggleFullScreen();
     };
 
-    // Ensures we track fullscreen state when the user toggles fullscreen
     const handleScreenChange = (isFullscreen) => {
         setIsFullScreen(isFullscreen);
     };
@@ -33,7 +32,33 @@ function ImageCarousel({ pics, showFullscreenButton = true }) {
                 showFullscreenButton={showFullscreenButton}
                 onScreenChange={handleScreenChange}
                 onClick={handleImageClick}
-                showPlayButton={false} // Disables play button for simplicity
+                showPlayButton={false}
+                renderItem={(item) => (
+                    <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <TransformWrapper
+                            initialScale={1}
+                            minScale={1}
+                            maxScale={4}
+                            doubleClick={{ disabled: false }}
+                            pinch={{ step: 5 }}
+                            wrapperStyle={{
+                                width: "100%",
+                                height: "100%",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center"
+                            }}
+                        >
+                            <TransformComponent>
+                                <img
+                                    src={item.original}
+                                    alt={item.description || ""}
+                                    style={{ display: "block", margin: "0 auto", maxWidth: "100%", height: "auto" }}
+                                />
+                            </TransformComponent>
+                        </TransformWrapper>
+                    </div>
+                )}
             />
         </div>
     );
