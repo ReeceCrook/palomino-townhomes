@@ -34,7 +34,7 @@ function Home() {
       <div className={`${isMobile ? 'mobile-circle' : 'circle'}`}>
         <p>
           Call to tour our model!<br />
-          <a href="tel:PHONE_NUM">719-964-3526</a><br />
+          <a href="tel:7199643526">719-964-3526</a><br />
         </p>
       </div>
     </div>
