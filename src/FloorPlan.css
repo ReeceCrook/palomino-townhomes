@@ -48,11 +48,6 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.fullscreen .floorPlanCard:hover {
-  transform: none;
-  box-shadow: none;
-}
-
 .divider {
   border: 0;
   height: 2px;
@@ -65,6 +60,11 @@
   .floorPlanCard {
     flex: 1 1 calc(45% - 20px);
     max-width: calc(45% - 20px);
+  }
+
+  .floorPlanCard:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
 
@@ -79,6 +79,11 @@
     flex: 1 1 90%;
     max-width: 90%;
   }
+
+  .floorPlanCard:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -92,5 +97,10 @@
     flex: 1 1 100%;
     max-width: 100%;
     margin-bottom: var(--gap-size);
+  }
+
+  .floorPlanCard:hover {
+    transform: none;
+    box-shadow: none;
   }
 }

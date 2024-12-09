@@ -202,14 +202,8 @@ figcaption {
 }
 
 .fullscreen img:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
-:fullscreen .floorPlanCard:hover,
-:-webkit-full-screen .floorPlanCard:hover {
-  transform: none !important;
-  box-shadow: none !important;
+  transform: none;
+  box-shadow: none;
 }
 
 .info-box {
@@ -269,7 +263,7 @@ figcaption {
   }
 
   .homeDiv {
-    padding-top: 60px;
+    padding-top: 72px;
   }
 
   .homeTabs a {
