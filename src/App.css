@@ -24,11 +24,6 @@ body {
 .homeImageGalleryWrapper {
   display: inline-block;
   width: 60%;
-
-  .image-gallery-left-nav,
-  .image-gallery-right-nav {
-    margin: 0 -100px;
-  }
 }
 
 .homeTabs {
@@ -73,13 +68,6 @@ body {
   cursor: pointer;
 }
 
-figure {
-  margin: 0;
-  padding: 0;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 figcaption {
   transition: opacity 0.3s ease-in-out;
   font-size: 14px;
@@ -88,15 +76,6 @@ figcaption {
   color: #555;
   position: relative;
   top: -20px;
-}
-
-figure img {
-  width: 100%;
-  height: auto;
-}
-
-figure:hover img {
-  opacity: 0.8;
 }
 
 .finalCovenants,
@@ -111,6 +90,42 @@ figure:hover img {
   background-position: center center;
   background-repeat: no-repeat;
   padding-bottom: 25%;
+}
+
+.circle {
+  position: absolute;
+  top: 35%;
+  left: 20px;
+  width: 220px;
+  height: 220px;
+  border: 5px solid #08966e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 12px;
+  font-size: xx-large;
+  color: #333;
+}
+
+.mobile-circle {
+  border: 2px solid #00B353;
+  background-color: rgba(0, 179, 83, 0.1);
+  margin-top: 84%;
+  height: 100px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 5px 5px gray;
+  font-size: xx-large;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .communityInfoWrapper {
@@ -168,8 +183,21 @@ figure:hover img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9998;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+.fullscreen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel-wrapper img {
+  cursor: pointer;
+}
+
+.fullscreen img:hover {
+  transform: none;
 }
 
 .info-box {
@@ -214,19 +242,54 @@ figure:hover img {
   }
 
   .homeTabs {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
     display: flex;
-    position: relative;
-    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
 
-    .facebookNavWrapper {
-      position: relative;
-      right: 350%;
-      top: 65%;
+  .homeDiv {
+    padding-top: 60px;
+  }
 
-      .facebookLogoNav {
-        max-width: 80%;
-      }
-    }
+  .homeTabs a {
+    margin: 0 5px;
+    text-decoration: none;
+  }
+
+  .iconsWrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconButtons {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .icons {
+    width: 35px;
+    padding: 0;
+  }
+
+  figcaption {
+    font-size: 10px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .navTabs {
@@ -276,28 +339,4 @@ figure:hover img {
   .communityInfoWrapperInner {
     padding: 0%;
   }
-}
-
-.circle {
-  position: absolute;
-  float: left;
-  width: 220px;
-  height: 220px;
-  border: 5px solid #08966e;
-  border-radius: 50%;
-  margin-left: 20px;
-  top: 35%;
-}
-
-.mobile-circle {
-  border: 2px solid;
-  border-color: #00B353;
-  background-color: rgba(0, 179, 83, 0.1);
-  margin-top: 84%;
-  height: 170px;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 10px 5px 5px gray;
-  padding-bottom: 9%;
 }

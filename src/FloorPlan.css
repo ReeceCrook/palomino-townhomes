@@ -1,66 +1,91 @@
 .floorPlanWrapper {
-  display: inline-flex;
-  height: 100%;
-  width: 100%;
-  outline: auto;
-  padding-bottom: 20%;
+  --bg-color: #bd915b;
+  --card-bg-color: #ffffff;
+  --border-color: #333333;
+  --text-padding: 15px;
+  --border-radius: 8px;
+  --card-width: 33.33%;
+  --gap-size: 20px;
+}
+
+.floorPlansPage {
   background-color: #bd915b;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.card1,
-.card2,
-.card3 {
-  background-color: white;
-  border: #333;
-  border-radius: 5px;
-  border-style: groove;
-  margin: 100px 8px 10px 8px;
-  padding: 10px;
+
+.floorPlanWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: var(--bg-color);
+  gap: var(--gap-size);
+  margin-top: 5%;
+  margin-right: 10%;
 }
 
-.card3 {
-  margin-right: 9%;
+.floorPlanCard {
+  background-color: var(--card-bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--text-padding);
+  flex: 1 1 calc(var(--card-width) - 40px);
+  max-width: calc(var(--card-width) - 40px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.cardTextDiv {
-  border-bottom: solid;
-  border-width: 3px;
-  height: 21%;
+.floorPlanCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1800px) {
-  .cardTextDiv {
-    padding-bottom: 50px;
+.divider {
+  border: 0;
+  height: 2px;
+  background-color: var(--border-color);
+  margin: 15px 0;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .floorPlanCard {
+    flex: 1 1 calc(45% - 20px);
+    max-width: calc(45% - 20px);
   }
-
-  .image-gallery-icon {
-    padding: 5px;
-    margin-top: 15px;
-  }
 }
 
-
-@media only screen and (max-width: 600px) {
+@media (max-width: 768px) {
   .floorPlanWrapper {
-    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25%;
   }
 
-  .card1,
-  .card2,
-  .card3 {
-    float: left;
-    border: #333;
-    border-radius: 5px;
-    border-style: groove;
-    margin: 10px 80px 10px 10px;
-    padding: 10px;
-    width: 65%;
+  .floorPlanCard {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .floorPlanWrapper {
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 20%;
   }
 
-
-  .cardTextDiv {
-    border-bottom: solid;
-    border-width: 3px;
-    height: 20%;
+  .floorPlanCard {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: var(--gap-size);
   }
 }

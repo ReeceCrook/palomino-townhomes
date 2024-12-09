@@ -32,7 +32,7 @@ function Home() {
         <ImageCarousel pics={homeImages} />
       </div>
       <div className={`${isMobile ? 'mobile-circle' : 'circle'}`}>
-        <p style={{ fontSize: "195%", marginTop: "20%" }}>
+        <p>
           Call to tour our model!<br />
           <a href="tel:PHONE_NUM">719-964-3526</a><br />
         </p>
