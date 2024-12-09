@@ -48,6 +48,11 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
+.fullscreen .floorPlanCard:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .divider {
   border: 0;
   height: 2px;
