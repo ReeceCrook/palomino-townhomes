@@ -202,7 +202,14 @@ figcaption {
 }
 
 .fullscreen img:hover {
-  transform: none;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+:fullscreen .floorPlanCard:hover,
+:-webkit-full-screen .floorPlanCard:hover {
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .info-box {
