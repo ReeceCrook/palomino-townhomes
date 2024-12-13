@@ -58,7 +58,26 @@
 
 .fullscreen .floorPlanCard {
   pointer-events: none;
+  transform: none;
 }
+
+.image-gallery-icon:hover {
+  transform: none !important;
+  transition: none !important;
+}
+
+.image-gallery-left-nav:hover .image-gallery-icon,
+.image-gallery-right-nav:hover .image-gallery-icon {
+  transform: none !important;
+  transition: none !important;
+}
+
+.image-gallery-left-nav:hover .image-gallery-svg,
+.image-gallery-right-nav:hover .image-gallery-svg {
+  transform: none !important;
+  transition: none !important;
+}
+
 
 
 @media (max-width: 1200px) {

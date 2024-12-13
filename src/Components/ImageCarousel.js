@@ -27,7 +27,17 @@ function ImageCarousel({ pics, showFullscreenButton = true }) {
         <div className={isFullScreen ? "fullscreen" : "carousel-wrapper"}>
             <ImageGallery
                 ref={galleryRef}
-                items={pics}
+                items={pics.map(pic => ({
+                    original: pic.original,
+                    thumbnail: pic.thumbnail,
+                    renderItem: () => (
+                        <img
+                            src={pic.original}
+                            alt="Townhome Images"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                    )
+                }))}
                 showFullscreenButton={showFullscreenButton}
                 onScreenChange={handleScreenChange}
                 onClick={handleImageClick}

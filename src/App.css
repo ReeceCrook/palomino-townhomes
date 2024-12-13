@@ -234,6 +234,13 @@ figcaption {
   flex-grow: 1;
 }
 
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  transition: none;
+  transform: none;
+  margin: auto;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1800px) {
   .backroundImgDiv {
     background-position: center;
