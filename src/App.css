@@ -177,12 +177,12 @@ figcaption {
   margin-bottom: 5px;
 }
 
-.fullscreen {
+/* .fullscreen {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   z-index: 9999;
   -action: none;
 }
@@ -190,7 +190,7 @@ figcaption {
 .fullscreen *:hover {
   transform: none;
   box-shadow: none;
-}
+} */
 
 .carousel-wrapper *:hover {
   transform: none;
@@ -240,6 +240,33 @@ figcaption {
   transform: none;
   margin: auto;
 }
+
+.fullscreen-button{
+  position: absolute;
+  bottom: 12%;
+  right: 0;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fullscreen-icon {
+  width: 100%;
+  height: auto;
+}
+
+.yarl__icon {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.thumb-slider-wrapper {
+  margin-top: -8%;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1800px) {
   .backroundImgDiv {

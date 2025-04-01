@@ -224,16 +224,19 @@ const floorPlanImages = [
     [
         {
             'original': card1img1,
+            "thumbnail": card1img1,
             'model': 1551,
             'originalClass': 'cardImgs'
         },
         {
             'original': card1img2,
+            "thumbnail": card1img2,
             'model': 1551,
             'originalClass': 'cardImgs'
         },
         {
             'original': card1img3,
+            "thumbnail": card1img3,
             'model': 1551,
             'originalClass': 'cardImgs'
         }
@@ -241,16 +244,19 @@ const floorPlanImages = [
     [
         {
             'original': card2img1,
+            "thumbnail": card2img1,
             'model': 1551,
             'originalClass': 'cardImgs'
         },
         {
             'original': card2img2,
+            "thumbnail": card2img2,
             'model': 1551,
             'originalClass': 'cardImgs'
         },
         {
             'original': card2img3,
+            "thumbnail": card2img3,
             'model': 1551,
             'originalClass': 'cardImgs'
         }
@@ -258,16 +264,19 @@ const floorPlanImages = [
     [
         {
             'original': card3img1,
+            "thumbnail": card3img1,
             'model': 1558,
             'originalClass': 'cardImgs'
         },
         {
             'original': card3img2,
+            "thumbnail": card3img2,
             'model': 1558,
             'originalClass': 'cardImgs'
         },
         {
             'original': card3img3,
+            "thumbnail": card3img3,
             'model': 1558,
             'originalClass': 'cardImgs'
         },
