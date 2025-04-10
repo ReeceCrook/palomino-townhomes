@@ -267,6 +267,12 @@ figcaption {
   padding: 0;
 }
 
+.slick-prev:before, 
+.slick-next:before {
+  content: none;
+}
+
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1800px) {
   .backroundImgDiv {

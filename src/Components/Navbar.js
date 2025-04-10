@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import homeIcon from '../assets/Icons/home.png';
+import availableHomeIcom from '../assets/Icons/new-home.png'
 import floorPlansIcon from '../assets/Icons/blueprint.png'
 import directionsIcon from "../assets/Icons/direction.png";
 import communityInfoIcon from "../assets/Icons/info.png";
@@ -28,6 +29,22 @@ function NavBar() {
                     <button className="iconButtons">
                         <img src={homeIcon} alt="townhome icon" onClick={() => navigate('/')} className="icons" />
                         <figcaption>Home</figcaption>
+                    </button>
+                </figure>
+            </NavLink>
+            <NavLink
+             to="/available-homes"
+             activeclassname="active"
+             exact="true"
+            >
+                <figure className="iconsWrapper">
+                    <button className="iconButtons">
+                        <img src={availableHomeIcom}
+                        alt="New house icons created by Iconic Artisan" 
+                        title="New house icons created by Iconic Artisan" 
+                        onClick={() => navigate('/available-homes')} className="icons"
+                        />
+                        <figcaption>Available Homes</figcaption>
                     </button>
                 </figure>
             </NavLink>

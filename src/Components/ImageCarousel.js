@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "yet-another-react-lightbox/styles.css";
-import fullscreenImg from "../assets/Icons/image.png";
+import fullscreenImg from "../assets/Icons/fullscreen.png";
+import previousIcon from "../assets/Icons/left-chevron.png"
+import nextIcon from "../assets/Icons/right-chevron.png"
 
 function NextArrow({ onClick }) {
   return (
@@ -13,16 +16,19 @@ function NextArrow({ onClick }) {
       style={{
         position: "absolute",
         right: "10px",
-        top: "45%",
+        top: "50%",
         transform: "translateY(-50%)",
         zIndex: 2,
         cursor: "pointer",
-        color: "#000",
-        fontSize: "100px",
         userSelect: "none",
       }}
     >
-      ›
+      <img 
+        src={nextIcon} 
+        alt="Next icon created by tenBystry - Flaticon" 
+        title="Next icon created by tenBystry - Flaticon"
+        style={{ width: "40px", height: "40px" }}
+      />
     </div>
   );
 }
@@ -34,19 +40,23 @@ function PrevArrow({ onClick }) {
       style={{
         position: "absolute",
         left: "10px",
-        top: "45%",
+        top: "50%",
         transform: "translateY(-50%)",
         zIndex: 2,
         cursor: "pointer",
-        color: "#000",
-        fontSize: "100px",
         userSelect: "none",
       }}
     >
-      ‹
+      <img 
+        src={previousIcon} 
+        alt="Left arrow icon created by tenBystry - Flaticon" 
+        title="Left arrow icon created by tenBystry - Flaticon"
+        style={{ width: "40px", height: "40px" }}
+      />
     </div>
   );
 }
+
 
 function ImageCarousel({ pics }) {
   const [slider1, setSlider1] = useState(null);
@@ -71,14 +81,12 @@ function ImageCarousel({ pics }) {
   const thumbSettings = {
     asNavFor: slider1,
     ref: (slider) => setSlider2(slider),
-    slidesToShow: 5,
+    slidesToShow: 8,
     swipeToSlide: true,
     focusOnSelect: true,
-    infinite: true,
-    arrows: true,
+    infinite: pics.length < 8 ? false : true,
+    arrows: false,
     dots: false,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 768,
@@ -115,7 +123,7 @@ function ImageCarousel({ pics }) {
           className="fullscreen-button"
           onClick={() => setLightboxOpen(true)}
         >
-          <img src={fullscreenImg} alt="Fullscreen" style={{ width: "40px", height: "40px" }} />
+          <img src={fullscreenImg} alt="Fullscreen icons created by mavadee" title="Fullscreen icons created by mavadee" style={{ width: "40px", height: "40px" }} />
         </button>
       </div>
         <div className="thumb-slider-wrapper">
@@ -143,6 +151,11 @@ function ImageCarousel({ pics }) {
         open={lightboxOpen}
         index={currentIndex}
         close={() => setLightboxOpen(false)}
+        plugins={[Zoom]}
+        zoom={{
+          maxZoomPixelRatio: 4,
+          zoomSpeed: 0.2,
+        }}
       />
     </div>
   );
