@@ -8,8 +8,6 @@ import communityInfoIcon from "../assets/Icons/info.png";
 import contactUsIcon from '../assets/Icons/contact-us.png';
 import facebookLogo from "../assets/Icons/play.png";
 
-import "../App.css"
-
 function NavBar() {
     const navigate = useNavigate()
     const location = useLocation();

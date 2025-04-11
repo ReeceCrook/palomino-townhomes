@@ -2,7 +2,7 @@ import React from 'react'
 import { useFormik } from 'formik';
 import * as yup from "yup"
 import emailjs from '@emailjs/browser';
-import "../Contact.css"
+import "../css/Contact.css"
 import jimPhoto from "../assets/mainPics/jim.jpg"
 import mbLogo from "../assets/mainPics/MB-logo.png"
 import facebookLogo from "../assets/mainPics/Facebook_Logo_Primary.png"

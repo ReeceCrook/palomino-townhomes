@@ -1,5 +1,5 @@
 import React from 'react';
-import '../FloorPlan.css';
+import '../css/FloorPlan.css';
 import { floorPlanImages } from '../images';
 import ImageCarousel from './ImageCarousel';
 function FloorPlans() {

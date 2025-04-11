@@ -1,5 +1,4 @@
 import React from 'react'
-import "../App.css"
 import finalCovs from '../assets/hoaDocs/FinalCovenants.pdf'
 import byLaws from '../assets/hoaDocs/Bylaws.pdf'
 import platMap from '../assets/mainPics/CleanPalomino.Plat.jpg'

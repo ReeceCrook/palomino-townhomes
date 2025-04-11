@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "yet-another-react-lightbox/styles.css";
-import fullscreenImg from "../assets/Icons/fullscreen.png";
 import previousIcon from "../assets/Icons/left-chevron.png"
 import nextIcon from "../assets/Icons/right-chevron.png"
 
@@ -63,6 +62,9 @@ function ImageCarousel({ pics }) {
   const [slider2, setSlider2] = useState(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showInfo, setShowInfo] = useState(true);
+  const [infoHasBeenShown, setInfoHasBeenShown] = useState(false);
+  const infoTimerRef = useRef(null);
 
   const mainSettings = {
     asNavFor: slider2,
@@ -103,10 +105,30 @@ function ImageCarousel({ pics }) {
     ],
   };
   
+  const handleMouseEnter = () => {
+    if (!infoHasBeenShown) {
+      setShowInfo(true);
+      infoTimerRef.current = setTimeout(() => {
+        setShowInfo(false);
+        setInfoHasBeenShown(true);
+      }, 1200)
+    }
+  };
 
   return (
     <div className="synchronized-carousel">
-      <div className="main-slider-wrapper" style={{ position: "relative"}}>
+      <div 
+      className="main-slider-wrapper" 
+      style={{ position: "relative"}}
+      onMouseEnter={handleMouseEnter}
+      >
+        {showInfo && (
+          <div className="thought-bubble">
+          Click Me!
+          <span className="bubble-tail bubble-tail-1"></span>
+          <span className="bubble-tail bubble-tail-2"></span>
+        </div>
+        )}
         <Slider {...mainSettings}>
           {pics.map((pic, idx) => (
             <div key={idx} className="main-slide">
@@ -119,12 +141,6 @@ function ImageCarousel({ pics }) {
             </div>
           ))}
         </Slider>
-        <button
-          className="fullscreen-button"
-          onClick={() => setLightboxOpen(true)}
-        >
-          <img src={fullscreenImg} alt="Fullscreen icons created by mavadee" title="Fullscreen icons created by mavadee" style={{ width: "40px", height: "40px" }} />
-        </button>
       </div>
         <div className="thumb-slider-wrapper">
         <Slider {...thumbSettings}>
