@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import homeIcon from '../assets/Icons/home.png';
-import availableHomeIcom from '../assets/Icons/new-home.png'
+// import availableHomeIcom from '../assets/Icons/new-home.png'
 import floorPlansIcon from '../assets/Icons/blueprint.png'
 import directionsIcon from "../assets/Icons/direction.png";
 import communityInfoIcon from "../assets/Icons/info.png";
@@ -30,7 +30,7 @@ function NavBar() {
                     </button>
                 </figure>
             </NavLink>
-            <NavLink
+            {/* <NavLink
              to="/available-homes"
              activeclassname="active"
              exact="true"
@@ -45,7 +45,7 @@ function NavBar() {
                         <figcaption>Available Homes</figcaption>
                     </button>
                 </figure>
-            </NavLink>
+            </NavLink> */}
             <NavLink
                 to="/floor-plans"
                 exact="true"

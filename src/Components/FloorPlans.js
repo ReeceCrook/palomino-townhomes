@@ -6,7 +6,7 @@ function FloorPlans() {
   return (
     <div className="floorPlansPage">
       <div className="floorPlanWrapper">
-        <article className="floorPlanCard">
+        <article className="floorPlanCard FPCard1">
           <div className="cardText">
             <h2>3 Bedroom 2.5 Bath</h2>
             <p>
@@ -19,7 +19,7 @@ function FloorPlans() {
           <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={true} />
         </article>
 
-        <article className="floorPlanCard">
+        <article className="floorPlanCard FPCard2">
           <div className="cardText">
             <h2>2 Bedroom 2.5 Bath</h2>
             <p>
@@ -31,7 +31,7 @@ function FloorPlans() {
           <ImageCarousel pics={floorPlanImages[1]} showFullscreenButton={true} />
         </article>
 
-        <article className="floorPlanCard">
+        <article className="floorPlanCard FPCard3">
           <div className="cardText">
             <h2>3 Bedroom 2.5 Bath</h2>
             <p>

@@ -74,8 +74,13 @@ function ImageCarousel({ pics }) {
     arrows: true,
     fade: true,
     infinite: true,
+    swipe: true,
     dots: false,
     beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex),
+    afterChange: (currentIndex) => {
+      setShowInfo(false);
+      setInfoHasBeenShown(true);
+    },
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
@@ -124,10 +129,10 @@ function ImageCarousel({ pics }) {
       >
         {showInfo && (
           <div className="thought-bubble">
-          Click Me!
-          <span className="bubble-tail bubble-tail-1"></span>
-          <span className="bubble-tail bubble-tail-2"></span>
-        </div>
+            Click For Fullscreen
+            <span className="bubble-tail bubble-tail-1"></span>
+            <span className="bubble-tail bubble-tail-2"></span>
+          </div>
         )}
         <Slider {...mainSettings}>
           {pics.map((pic, idx) => (

@@ -4,7 +4,7 @@ import { LoadScriptNext } from '@react-google-maps/api';
 import '../css/App.css';
 import NavBar from './Navbar';
 import Home from './Home';
-import AvailableHomes from './AvailableHomes.js';
+// import AvailableHomes from './AvailableHomes.js';
 import FloorPlans from './FloorPlans';
 import Loading from './Loading.js';
 import Contact from './Contact.js';
@@ -23,7 +23,7 @@ function App() {
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path='/available-homes' element={<AvailableHomes />} />
+            {/* <Route exact path='/available-homes' element={<AvailableHomes />} /> */}
             <Route exact path="/floor-plans" element={<FloorPlans />} />
             <Route exact path="/community-info" element={<CommunityInfo />} />
             <Route exact path="/directions" element={<Directions />} />
