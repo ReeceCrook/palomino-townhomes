@@ -130,8 +130,6 @@ function ImageCarousel({ pics }) {
         {showInfo && (
           <div className="thought-bubble">
             Click For Fullscreen
-            <span className="bubble-tail bubble-tail-1"></span>
-            <span className="bubble-tail bubble-tail-2"></span>
           </div>
         )}
         <Slider {...mainSettings}>

@@ -287,26 +287,6 @@ figcaption {
   text-align: center;
 }
 
-.bubble-tail-1 {
-  position: absolute;
-  bottom: -16px;
-  left: 40%;
-  width: 12px;
-  height: 12px;
-  background: rgba(2,132,86,255);
-  border-radius: 50%;
-}
-
-.bubble-tail-2 {
-  position: absolute;
-  bottom: -28px;
-  left: 45%;
-  width: 8px;
-  height: 8px;
-  background: rgba(2,132,86,255);
-  border-radius: 50%;
-}
-
 .FPCard2 .thought-bubble,
 .FPCard3 .thought-bubble {
   display: none;
@@ -324,28 +304,12 @@ figcaption {
 
 @media only screen and (max-width: 770px) {
   .floorPlanCard .thought-bubble {
-    left: 15%;
+    display: none;
   }
 
   .homeImageGalleryWrapper .thought-bubble {
-    top: 10px;
-    right: 5px;
-    left: auto;
-    transform: none;
+    display: none;
   }
-
-  .homeImageGalleryWrapper .bubble-tail-1 {
-    bottom: -15px;
-    right: 70px;
-    left: auto;
-  }
-
-  .homeImageGalleryWrapper .bubble-tail-2 {
-    bottom: -30px;
-    right: 75px;
-    left: auto;
-  }
-
 
   .info-box {
     width: 100%;
