@@ -177,21 +177,6 @@ figcaption {
   margin-bottom: 5px;
 }
 
-/* .fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  z-index: 9999;
-  -action: none;
-}
-
-.fullscreen *:hover {
-  transform: none;
-  box-shadow: none;
-} */
-
 .carousel-wrapper *:hover {
   transform: none;
   box-shadow: none;
@@ -272,23 +257,42 @@ figcaption {
   content: none;
 }
 
-.thought-bubble {
+.info-bar {
   position: absolute;
   top: 1%;
-  left: 14%;
+  left: 10%;
   transform: translateX(-50%);
-  padding: 15px 20px;
-  background: rgba(2,132,86,255);
-  color: white;
-  border-radius: 50%;
+  width: 15%;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(2, 132, 86, 0.95);
+  color: #ffffff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
   z-index: 3;
-  pointer-events: none;
-  font-size: 115%;
+}
+
+.info-bar-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.info-bar-message {
+  flex: 1;
   text-align: center;
 }
 
-.FPCard2 .thought-bubble,
-.FPCard3 .thought-bubble {
+.FPCard1 .info-bar {
+  width: 25%;
+  left: 13%;
+}
+
+.FPCard2 .info-bar,
+.FPCard3 .info-bar {
   display: none;
 }
 
@@ -416,5 +420,31 @@ figcaption {
 
   .communityInfoWrapperInner {
     padding: 0%;
+  }
+
+  .info-bar {
+    top: 1%;
+    left: 79%;
+    transform: translateX(-50%);
+    width: 35%;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+  }
+
+  .info-bar-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  .info-bar-message {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .FPCard1 .info-bar {
+    left: 50%;
+    width: 45%;
   }
 }

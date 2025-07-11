@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "yet-another-react-lightbox/styles.css";
 import previousIcon from "../assets/Icons/left-chevron.png"
 import nextIcon from "../assets/Icons/right-chevron.png"
+import infoIcon from "../assets/Icons/info-icon.png"
 
 function NextArrow({ onClick }) {
   return (
@@ -120,16 +121,31 @@ function ImageCarousel({ pics }) {
     }
   };
 
+  const handleClick = () => {
+    if (!infoHasBeenShown) {
+      setShowInfo(false);
+      setInfoHasBeenShown(true);
+    }
+  };
+
   return (
     <div className="synchronized-carousel">
       <div 
       className="main-slider-wrapper" 
       style={{ position: "relative"}}
       onMouseEnter={handleMouseEnter}
+      onClick={handleClick}
       >
         {showInfo && (
-          <div className="thought-bubble">
-            Click For Fullscreen
+          <div className="info-bar">
+            <img
+              src={infoIcon}
+              alt=""
+              className="info-bar-icon"
+            />
+            <div className="info-bar-message">
+              Click for fullscreen
+            </div>  
           </div>
         )}
         <Slider {...mainSettings}>
