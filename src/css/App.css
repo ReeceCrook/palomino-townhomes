@@ -24,6 +24,9 @@ body {
 .homeImageGalleryWrapper {
   display: inline-block;
   width: 60%;
+  border: gray;
+  border-radius: 15px;
+  box-shadow: 15px 15px 5px gray;
 }
 
 .homeTabs {
@@ -311,6 +314,10 @@ figcaption {
     display: none;
   }
 
+  .homeImageGalleryWrapper {
+    box-shadow: none;
+  }
+
   .homeImageGalleryWrapper .thought-bubble {
     display: none;
   }
@@ -444,7 +451,6 @@ figcaption {
   }
 
   .FPCard1 .info-bar {
-    left: 50%;
-    width: 45%;
+    display: none;
   }
 }
