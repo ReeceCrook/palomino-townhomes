@@ -9,6 +9,10 @@ function CommunityInfo() {
     <div className='backroundImgDiv'>
       <div className='communityInfoWrapper'>
         <div className='communityInfoWrapperInner'>
+            <div className='platMap'>
+              <h2>Plat Map/Availability</h2>
+              <a href={platMap} target="_blank" rel="noopener noreferrer">View PDF</a>
+          </div>
           <div className='finalCovenants'>
             <h2>
               Declaration of Covenants,<br />
@@ -23,10 +27,6 @@ function CommunityInfo() {
               Homeowners Association, Inc..
             </h2>
             <a href={byLaws} target="_blank" rel="noopener noreferrer">View PDF</a>
-          </div>
-          <div className='platMap'>
-            <h2>Plat Map</h2>
-            <a href={platMap} target="_blank" rel="noopener noreferrer">View PDF</a>
           </div>
         </div>
       </div>
