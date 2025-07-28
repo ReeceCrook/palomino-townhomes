@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import finalCovs from '../assets/hoaDocs/FinalCovenants.pdf'
 import byLaws from '../assets/hoaDocs/Bylaws.pdf'
 import platMap from '../assets/mainPics/CleanPalomino.Plat.jpg'
 
 function CommunityInfo() {
+  const [isPlatModalOpen, setIsPlatModalOpen] = useState(false)
 
   return (
     <div className='backroundImgDiv'>
@@ -11,7 +12,12 @@ function CommunityInfo() {
         <div className='communityInfoWrapperInner'>
             <div className='platMap'>
               <h2>Plat Map/Availability</h2>
-              <a href={platMap} target="_blank" rel="noopener noreferrer">View PDF</a>
+                <button
+                  className="platMapButton"
+                  onClick={() => setIsPlatModalOpen(true)}
+                >
+              View Plat Map
+            </button>
           </div>
           <div className='finalCovenants'>
             <h2>
@@ -30,8 +36,15 @@ function CommunityInfo() {
           </div>
         </div>
       </div>
+        {isPlatModalOpen && (
+          <div className='modalWrapper' onClick={() => setIsPlatModalOpen(false)}>
+            <div className='modalContent' onClick={e => e.stopPropagation()}>
+              <button className='closeModal' onClick={() => setIsPlatModalOpen(false)} aria-label="Close TownHome Plat Map">❌</button>
+              <img src={platMap} alt='MasterBilt Palomino Townhomes Colorado Springs Colorado Plat Map' className='platMapImg'/>
+            </div>
+          </div>
+        )}
     </div>
-
   );
 }
 
