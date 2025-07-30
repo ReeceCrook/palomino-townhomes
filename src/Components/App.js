@@ -10,7 +10,7 @@ import Loading from './Loading.js';
 import Contact from './Contact.js';
 import Directions from './Directions.js'
 const CommunityInfo = lazy(() => import('./CommunityInfo.js'));
-const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+const API_KEY = "AIzaSyBb37nQzzMw7_9NBshKx5uOTCj9oe9pxq0";
 
 function App() {
   return (
