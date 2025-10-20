@@ -11,8 +11,8 @@ function Directions() {
   };
 
   const center = {
-    lat: 38.90873105888053,
-    lng: -104.71440132092197,
+    lat: 38.90897932355048,
+    lng: -104.71423023899487
   };
   return (
     <div className='directionsWrapper'>
@@ -26,7 +26,7 @@ function Directions() {
         <MarkerF position={center} />
       </GoogleMap>
       <a
-        href='https://maps.app.goo.gl/n6xQhkay1Xtk9vbG9'
+        href='https://maps.app.goo.gl/kZGZBtfFjVg5rDvc7'
         target='_blank'
         rel="noopener noreferrer"
         className='mapDirectionsATag'
