@@ -33,7 +33,7 @@ function Directions() {
         aria-label="Open Google Maps for Palomino Townhomes"
       >
         Palomino Townhomes<br />
-        5217 Palomino Ranch Point<br />
+        5113 Palomino Ranch Point<br />
         Colorado Springs, Co. 80922
       </a>
       <div className='info-box'>
