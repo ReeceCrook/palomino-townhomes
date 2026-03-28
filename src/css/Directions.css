@@ -1,0 +1,56 @@
+.directionsWrapper {
+  margin-top: 70px;
+  display: inline-block;
+  width: 70%;
+  height: auto;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 400px;
+  transition: none;
+}
+
+.mapDirectionsLink {
+  padding: 5px 16px;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: x-large;
+}
+
+.infoBox {
+  background-color: rgb(255, 255, 0);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: auto;
+  width: 20%;
+}
+
+.infoIcon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.infoMessage {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 770px) {
+  .directionsWrapper {
+    float: left;
+    margin-left: 5%;
+  }
+
+  .mapDirectionsLink {
+    font-size: medium;
+  }
+
+  .infoBox {
+    width: 100%;
+  }
+}

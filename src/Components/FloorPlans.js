@@ -1,12 +1,13 @@
 import React from 'react';
-import '../css/FloorPlan.css';
+import '../css/FloorPlans.css';
 import { floorPlanImages } from '../images';
 import ImageCarousel from './ImageCarousel';
+
 function FloorPlans() {
   return (
     <div className="floorPlansPage">
       <div className="floorPlanWrapper">
-        <article className="floorPlanCard FPCard1">
+        <article className="floorPlanCard fpCard1">
           <div className="cardText">
             <h2>3 Bedroom 2.5 Bath</h2>
             <p>
@@ -16,10 +17,10 @@ function FloorPlans() {
             </p>
           </div>
           <hr className="divider" />
-          <ImageCarousel pics={floorPlanImages[2]} showFullscreenButton={true} />
+          <ImageCarousel pics={floorPlanImages[2]} />
         </article>
 
-        <article className="floorPlanCard FPCard2">
+        <article className="floorPlanCard fpCard2">
           <div className="cardText">
             <h2>2 Bedroom 2.5 Bath</h2>
             <p>
@@ -28,10 +29,10 @@ function FloorPlans() {
             </p>
           </div>
           <hr className="divider" />
-          <ImageCarousel pics={floorPlanImages[1]} showFullscreenButton={true} />
+          <ImageCarousel pics={floorPlanImages[1]} />
         </article>
 
-        <article className="floorPlanCard FPCard3">
+        <article className="floorPlanCard fpCard3">
           <div className="cardText">
             <h2>3 Bedroom 2.5 Bath</h2>
             <p>
@@ -40,7 +41,7 @@ function FloorPlans() {
             </p>
           </div>
           <hr className="divider" />
-          <ImageCarousel pics={floorPlanImages[0]} showFullscreenButton={true} />
+          <ImageCarousel pics={floorPlanImages[0]} />
         </article>
       </div>
     </div>

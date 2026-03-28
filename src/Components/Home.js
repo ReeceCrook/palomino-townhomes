@@ -1,28 +1,22 @@
 import React, { useEffect, useState } from 'react'
+import '../css/Home.css';
 import Logo from '../assets/mainPics/PalominoRanch-Logotype.png'
 import ImageCarousel from './ImageCarousel'
 import { homeImages } from '../images'
 
+const MOBILE_BREAKPOINT = '(max-width: 770px)';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.matchMedia('(max-width: 770px)').matches);
-    };
+    const mediaQuery = window.matchMedia(MOBILE_BREAKPOINT);
+    setIsMobile(mediaQuery.matches);
 
-    const handleResize = () => {
-      checkIsMobile();
-    };
+    const handleChange = (e) => setIsMobile(e.matches);
+    mediaQuery.addEventListener('change', handleChange);
 
-    checkIsMobile();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
   return (
@@ -31,7 +25,7 @@ function Home() {
       <div className='homeImageGalleryWrapper'>
         <ImageCarousel pics={homeImages} />
       </div>
-      <div className={`${isMobile ? 'mobile-circle' : 'circle'}`}>
+      <div className={isMobile ? 'mobileCircle' : 'circle'}>
         <p>
           Call to tour our model!<br />
           <a href="tel:7199643526">719-964-3526</a><br />
@@ -41,4 +35,4 @@ function Home() {
   )
 }
 
-export default Home 
+export default Home

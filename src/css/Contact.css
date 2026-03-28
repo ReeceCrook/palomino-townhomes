@@ -1,66 +1,48 @@
+.aboutUsPage {
+  background-color: #9cc0c5;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.about-us {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-us-title {
+  font-size: 2.2em;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 70px 0;
+  background-color: #9cc0c5;
+}
+
+.about-us-card {
+  border: 1px solid darkgray;
+  border-radius: 16px;
+  padding: 4%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  display: grid;
+  gap: 14px;
+  background-color: white;
+}
+
+.about-us-card p {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.about-us-emphasis {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
 .contactUsWrapper {
   display: inline-block;
-}
-
-.contactUsContainer {
-  position: relative;
-  background: #fff;
-  padding: 25px 40px 10px 40px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  color: black;
-  background-color: white;
-  font-family: 'Poppins', sans-serif;
-  width: 85%;
-}
-
-.contactUsContainer .contactUsText {
-  text-align: center;
-  font-size: 41px;
-  font-weight: 600;
-}
-
-.contactUsContainer form {
-  padding: 30px 0 0 0;
-}
-
-.contactUsContainer form .formRow {
-  display: flex;
-  margin: 32px 0;
-}
-
-form .formRow .inputData {
-  width: 100%;
-  height: 40px;
-  margin: 0 20px;
-  position: relative;
-}
-
-.inputData input,
-.textarea textarea {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none;
-  font-size: 17px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
-}
-
-.textarea textarea {
-  resize: none;
-  padding-top: 10px;
-}
-
-.inputData label {
-  position: sticky;
-  float: left;
-  pointer-events: none;
-  bottom: 10px;
-  font-size: 16px;
-}
-
-.submitBtn {
-  border: none;
+  width: 50%;
+  margin-left: 100px;
+  margin-top: 80px;
 }
 
 .businessCard {
@@ -69,9 +51,10 @@ form .formRow .inputData {
   padding: 20px;
   border: 2px solid #ccc;
   text-align: center;
-  top: 23%;
+  top: 12%;
   left: 2%;
   position: absolute;
+  background-color: white;
 }
 
 .businessCard img {
@@ -83,23 +66,30 @@ form .formRow .inputData {
   text-decoration: none;
   margin-bottom: 10px;
   padding: 2px;
+  font-size: larger;
 }
 
 .businessCard a:hover {
   text-decoration: underline;
 }
 
+.socialsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+}
+
 .facebookButton {
-  position: absolute;
-  margin-top: 25px;
   display: inline-flex;
   align-items: center;
-  padding: 10px;
+  gap: 10px;
+  padding: 10px 12px;
   background-color: #1877f2;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  left: 30%;
 }
 
 .facebookButton:hover {
@@ -108,28 +98,29 @@ form .formRow .inputData {
 
 .facebookLogo {
   width: 20px;
-  margin-right: 10px;
-}
-
-.socialsDiv {
-  position: relative;
 }
 
 .bbbRating {
-  position: absolute;
-  margin-top: 10px;
   display: inline-flex;
   align-items: center;
   padding: 10px;
-  color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  right: 20%;
+}
+
+.bbbRating img {
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 .mbLogo {
   width: 55%;
   position: relative;
+}
+
+.aboutUsMainLogo {
+  display: none;
 }
 
 @media only screen and (min-width: 1950px) {
@@ -141,88 +132,68 @@ form .formRow .inputData {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1800px) {
-  .mbLogo {
-    margin-left: 12%;
-  }
-
   .businessCard {
-    width: 14%;
-    top: 35%;
+    width: 18%;
+    top: 20%;
     left: 1%;
-  }
-
-  .contactUsContainer {
-    margin-left: 90px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-
-  .contactUsContainer {
-    display: none;
-  }
-
   .mbLogo {
     width: 100%;
   }
 
+  .aboutUsMainLogo {
+    display: block;
+  }
+
+  .businessCardLogo {
+    display: none;
+  }
+
   .businessCard {
-    position: relative;
-    width: 60%;
-    margin-top: 5px;
-    left: 10%;
+    position: static; 
+    width: 80%;
+  }
+
+  .about-us {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contactUsWrapper {
-    display: flex;
-    margin-right: 30%;
-    flex-direction: column;
-  }
-
-  .formRow {
-    flex-direction: column;
-  }
-
-  .inputData {
-    margin-bottom: 10px;
-    padding: 20px 0 20px 0;
-
-  }
-
-  .input-data.textarea {
-    width: 100%;
-  }
-
-  .submitBtn {
-    width: 100%;
+    display: block;
+    width: 80%;
+    margin: 0 auto 0 0;
+    padding-left: 1%;
+    padding-right: 5%;
+    box-sizing: border-box;
   }
 
   .socialsDiv {
-    position: relative;
-  }
-
-  .bbbRating {
-    width: 5%;
-    float: right;
-    position: absolute;
-    margin-top: 20px;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    right: 28%;
+    flex-direction: column;
+    align-items: stretch;
+    width: 80%;
   }
 
   .facebookButton {
-    margin-top: 35px;
-    width: 55%;
-    position: absolute;
-    background-color: #1877f2;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    left: 0%;
+    justify-content: center;
+    width: 100%;
   }
 
+  .bbbRating {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bbbRating img {
+    height: 70px;
+  }
+
+  .about-us-title {
+    margin: 10px 0 40px 0;
+    font-size: larger;
+  }
 
 }

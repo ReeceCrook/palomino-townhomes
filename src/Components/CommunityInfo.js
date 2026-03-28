@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import '../css/CommunityInfo.css'
 import finalCovs from '../assets/hoaDocs/FinalCovenants.pdf'
 import byLaws from '../assets/hoaDocs/Bylaws.pdf'
 import platMap from '../assets/mainPics/CleanPalomino.Plat.jpg'
@@ -7,7 +8,7 @@ function CommunityInfo() {
   const [isPlatModalOpen, setIsPlatModalOpen] = useState(false)
 
   return (
-    <div className='backroundImgDiv'>
+    <div className='backgroundImgDiv'>
       <div className='communityInfoWrapper'>
         <div className='communityInfoWrapperInner'>
             <div className='platMap'>

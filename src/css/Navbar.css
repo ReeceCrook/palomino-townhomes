@@ -1,0 +1,113 @@
+.homeTabs,
+.navTabs {
+  margin-right: 10px;
+  position: fixed;
+  top: 20%;
+  right: 0;
+}
+
+.navTabs a {
+  text-decoration: none;
+}
+
+.whiteBGNav {
+  margin-right: 10px;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.iconsWrapper figcaption {
+  text-decoration: none;
+}
+
+.iconButtons {
+  background: none;
+  border: none;
+}
+
+.icons {
+  padding: 5px;
+  width: 30px;
+  cursor: pointer;
+}
+
+figcaption {
+  transition: opacity 0.3s ease-in-out;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  position: relative;
+  top: -20px;
+}
+
+.facebookLogoNav {
+  width: 35px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 770px) {
+  .homeTabs {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+
+  .homeTabs a {
+    margin: 0 5px;
+    text-decoration: none;
+  }
+
+  .iconsWrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconButtons {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .icons {
+    width: 35px;
+    padding: 0;
+  }
+
+  figcaption {
+    font-size: 10px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .navTabs {
+    display: inline-block;
+    top: 13%;
+    left: 76%;
+    width: 25%;
+  }
+
+  .whiteBGNav {
+    display: inline-block;
+    top: 13%;
+    left: 76%;
+    width: 25%;
+  }
+}

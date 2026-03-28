@@ -1,33 +1,25 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import Slider from "react-slick";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "yet-another-react-lightbox/styles.css";
+import '../css/ImageCarousel.css';
 import previousIcon from "../assets/Icons/left-chevron.png"
 import nextIcon from "../assets/Icons/right-chevron.png"
 import infoIcon from "../assets/Icons/info-icon.png"
 
+const INFO_BAR_TIMEOUT_MS = 1200;
+
 function NextArrow({ onClick }) {
   return (
-    <div
-      onClick={onClick}
-      style={{
-        position: "absolute",
-        right: "10px",
-        top: "50%",
-        transform: "translateY(-50%)",
-        zIndex: 2,
-        cursor: "pointer",
-        userSelect: "none",
-      }}
-    >
-      <img 
-        src={nextIcon} 
-        alt="Next icon created by tenBystry - Flaticon" 
+    <div onClick={onClick} className="carouselArrow carouselNextArrow">
+      <img
+        src={nextIcon}
+        alt="Next icon created by tenBystry - Flaticon"
         title="Next icon created by tenBystry - Flaticon"
-        style={{ width: "40px", height: "40px" }}
+        className="carouselArrowIcon"
       />
     </div>
   );
@@ -35,23 +27,12 @@ function NextArrow({ onClick }) {
 
 function PrevArrow({ onClick }) {
   return (
-    <div
-      onClick={onClick}
-      style={{
-        position: "absolute",
-        left: "10px",
-        top: "50%",
-        transform: "translateY(-50%)",
-        zIndex: 2,
-        cursor: "pointer",
-        userSelect: "none",
-      }}
-    >
-      <img 
-        src={previousIcon} 
-        alt="Left arrow icon created by tenBystry - Flaticon" 
+    <div onClick={onClick} className="carouselArrow carouselPrevArrow">
+      <img
+        src={previousIcon}
+        alt="Left arrow icon created by tenBystry - Flaticon"
         title="Left arrow icon created by tenBystry - Flaticon"
-        style={{ width: "40px", height: "40px" }}
+        className="carouselArrowIcon"
       />
     </div>
   );
@@ -67,6 +48,12 @@ function ImageCarousel({ pics }) {
   const [infoHasBeenShown, setInfoHasBeenShown] = useState(false);
   const infoTimerRef = useRef(null);
 
+  useEffect(() => {
+    return () => {
+      if (infoTimerRef.current) clearTimeout(infoTimerRef.current);
+    };
+  }, []);
+
   const mainSettings = {
     asNavFor: slider2,
     ref: (slider) => setSlider1(slider),
@@ -78,7 +65,7 @@ function ImageCarousel({ pics }) {
     swipe: true,
     dots: false,
     beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex),
-    afterChange: (currentIndex) => {
+    afterChange: () => {
       setShowInfo(false);
       setInfoHasBeenShown(true);
     },
@@ -92,7 +79,7 @@ function ImageCarousel({ pics }) {
     slidesToShow: 8,
     swipeToSlide: true,
     focusOnSelect: true,
-    infinite: pics.length < 8 ? false : true,
+    infinite: pics.length >= 8,
     arrows: false,
     dots: false,
     responsive: [
@@ -110,76 +97,68 @@ function ImageCarousel({ pics }) {
       },
     ],
   };
-  
-  const handleMouseEnter = () => {
+
+  const handleMouseEnter = useCallback(() => {
     if (!infoHasBeenShown) {
       setShowInfo(true);
       infoTimerRef.current = setTimeout(() => {
         setShowInfo(false);
         setInfoHasBeenShown(true);
-      }, 1200)
+      }, INFO_BAR_TIMEOUT_MS);
     }
-  };
+  }, [infoHasBeenShown]);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     if (!infoHasBeenShown) {
+      if (infoTimerRef.current) clearTimeout(infoTimerRef.current);
       setShowInfo(false);
       setInfoHasBeenShown(true);
     }
-  };
+  }, [infoHasBeenShown]);
 
   return (
-    <div className="synchronized-carousel">
-      <div 
-      className="main-slider-wrapper" 
-      style={{ position: "relative"}}
-      onMouseEnter={handleMouseEnter}
-      onClick={handleClick}
+    <div className="synchronizedCarousel">
+      <div
+        className="mainSliderWrapper"
+        onMouseEnter={handleMouseEnter}
+        onClick={handleClick}
       >
         {showInfo && (
-          <div className="info-bar">
+          <div className="infoBar">
             <img
               src={infoIcon}
               alt=""
-              className="info-bar-icon"
+              className="infoBarIcon"
             />
-            <div className="info-bar-message">
+            <div className="infoBarMessage">
               Click for fullscreen
-            </div>  
+            </div>
           </div>
         )}
         <Slider {...mainSettings}>
-          {pics.map((pic, idx) => (
-            <div key={idx} className="main-slide">
+          {pics.map((pic) => (
+            <div key={pic.original} className="mainSlide">
               <img
                 src={pic.original}
-                alt={`Slide ${idx}`}
-                style={{ width: "100%", height: "auto", cursor: "pointer", padding: "0px"}}
+                alt={`Slide`}
                 onClick={() => setLightboxOpen(true)}
               />
             </div>
           ))}
         </Slider>
       </div>
-        <div className="thumb-slider-wrapper">
+      <div className="thumbSliderWrapper">
         <Slider {...thumbSettings}>
-            {pics.map((pic, idx) => (
-            <div key={idx} className="thumb-slide" style={{ margin: 0, padding: 0 }}>
-                <img
+          {pics.map((pic) => (
+            <div key={pic.thumbnail} className="thumbSlide">
+              <img
                 src={pic.thumbnail}
-                alt={`Thumbnail ${idx}`}
-                style={{
-                    width: "100%",
-                    height: "80px",
-                    objectFit: "cover",
-                    cursor: "pointer",
-                    display: "block",
-                }}
-                />
+                alt={`Thumbnail`}
+              />
             </div>
-            ))}
+          ))}
         </Slider>
-        </div>
+      </div>
 
       <Lightbox
         slides={pics.map((pic) => ({ src: pic.original }))}
