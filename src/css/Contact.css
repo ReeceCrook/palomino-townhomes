@@ -45,15 +45,20 @@
   margin-top: 80px;
 }
 
+.businessCardWrapper {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 10%;
+}
+
+
 .businessCard {
-  z-index: 1001;
-  width: 13%;
+  position: relative;
+  width: 100%;
   padding: 20px;
   border: 2px solid #ccc;
   text-align: center;
-  top: 12%;
-  left: 2%;
-  position: absolute;
   background-color: white;
 }
 
@@ -73,14 +78,6 @@
   text-decoration: underline;
 }
 
-.socialsDiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 12px 0;
-}
-
 .facebookButton {
   display: inline-flex;
   align-items: center;
@@ -90,6 +87,10 @@
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  position: absolute;
+  bottom: -43px;
+  left: 5%;
+  width: 100%;
 }
 
 .facebookButton:hover {
@@ -101,17 +102,13 @@
 }
 
 .bbbRating {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 5px;
+  position: absolute;
+  top: -64px;
+  left: 14%;
 }
 
 .bbbRating img {
   height: 60px;
-  width: auto;
-  display: block;
 }
 
 .mbLogo {
@@ -123,19 +120,26 @@
   display: none;
 }
 
-@media only screen and (min-width: 1950px) {
-  .businessCard {
-    left: 3%;
-    width: 8%;
-  }
-
-}
 
 @media only screen and (min-width: 601px) and (max-width: 1800px) {
   .businessCard {
-    width: 18%;
-    top: 20%;
+    width: 100%;
+    top: 30%;
     left: 1%;
+  }
+
+  .bbbRating {
+    top: auto;
+    bottom: 100%;
+    left: 2%;
+  }
+
+  .facebookButton {
+    bottom: auto;
+    top: 100%;
+    font-size: small;
+    left: 7%;
+    width: 100%;
   }
 }
 
@@ -195,5 +199,22 @@
     margin: 10px 0 40px 0;
     font-size: larger;
   }
+
+  .businessCardWrapper {
+  position: static;
+  width: 80%;
+}
+
+.bbbRating{
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.facebookButton {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
 
 }

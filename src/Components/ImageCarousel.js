@@ -143,6 +143,15 @@ function ImageCarousel({ pics }) {
                 alt={`Slide`}
                 onClick={() => setLightboxOpen(true)}
               />
+
+              {pic.ctaLink && (
+                <a
+                  href={pic.ctaLink}
+                  className="slideCtaHotspot"
+                  aria-label="Explore Floorplans"
+                  onClick={(e) => {e.stopPropagation();}}
+                />
+              )}
             </div>
           ))}
         </Slider>
@@ -161,7 +170,11 @@ function ImageCarousel({ pics }) {
       </div>
 
       <Lightbox
-        slides={pics.map((pic) => ({ src: pic.original }))}
+        slides={pics.map((pic) => ({
+            src: pic.original,
+            ctaLink: pic.ctaLink,
+            ctaLabel: pic.ctaLabel,
+          }))}
         open={lightboxOpen}
         index={currentIndex}
         close={() => setLightboxOpen(false)}
@@ -169,6 +182,26 @@ function ImageCarousel({ pics }) {
         zoom={{
           maxZoomPixelRatio: 4,
           zoomSpeed: 0.2,
+        }}
+        on={{
+          view: ({ index }) => setCurrentIndex(index),
+        }}
+        render={{
+          controls: () => {
+            const activePic = pics[currentIndex];
+
+            if (currentIndex !== 0 || !activePic?.ctaLink) return null;
+
+            return (
+              <a
+                href={activePic.ctaLink}
+                className="lightboxCtaButton"
+                aria-label={activePic.ctaLabel || "Explore Floorplans"}
+                onClick={(e) => e.stopPropagation()}
+              />
+
+            );
+          },
         }}
       />
     </div>

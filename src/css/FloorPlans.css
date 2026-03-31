@@ -55,14 +55,35 @@
   width: 100%;
 }
 
-.fpCard1 .infoBar {
+.fpCard1 .infoBar,
+.fpCard2 .infoBar,
+.fpCard3 .infoBar {
   width: 25%;
   left: 13%;
 }
 
-.fpCard2 .infoBar,
-.fpCard3 .infoBar {
-  display: none;
+.floorPlanCard .infoBox {
+  background-color: rgb(255, 255, 0);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: auto;
+  width: 80%;
+}
+
+.infoIcon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.cardTop {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1200px) {

@@ -1,5 +1,5 @@
 
-import img1 from './assets/HomePagePics/StartingInTheLow.png'
+import img1 from './assets/HomePagePics/Palomino Home Page.webp'
 import img2 from './assets/HomePagePics/mMqDXo4VQIeRfrObnzu57w_thumb_3680.jpg'
 import img3 from './assets/HomePagePics/mNMU2Ah0RQCG9WxK+l4DfQ_thumb_367e.jpg'
 import img4 from './assets/HomePagePics/u4nmejO7SfG615RK4a2MPw_thumb_367d.jpg'
@@ -11,7 +11,7 @@ import img9 from './assets/HomePagePics/bcdIvlx2Q96qh7bL02FqnA_thumb_364d.jpg'
 import img12 from './assets/HomePagePics/41+5rAJwR8GrQ+p82L5Zqg_thumb_3646.jpg'
 import img13 from './assets/HomePagePics/4-web-or-mls-DJI_0464.jpg'
 import img14 from './assets/HomePagePics/1-web-or-mls-DJI_0449.jpg'
-import buyerIncentive from './assets/HomePagePics/firstTimeHomebuyer.png'
+import buyerIncentive from './assets/HomePagePics/Prices.jpg'
 import newImg1 from './assets/HomePagePics/newPics/4-print-13.jpg'
 import newImg2 from './assets/HomePagePics/newPics/5-print-DJI_0475.jpg'
 import newImg3 from './assets/HomePagePics/newPics/6-print-15.jpg'
@@ -33,13 +33,14 @@ import card1img1 from './assets/FloorPlans/card1/Model 1551L-Main-8.8.23.jpg'
 import card1img2 from './assets/FloorPlans/card1/Model 1551L- Upper.jpg'
 import card1img3 from './assets/FloorPlans/card1/Model 1551L- Basement.jpg'
 
-import card2img1 from './assets/FloorPlans/card2/Model 1551R-Main.jpg'
-import card2img2 from './assets/FloorPlans/card2/Model 1551R- Upper.jpg'
-import card2img3 from './assets/FloorPlans/card2/Model 1551R- Basement.jpg'
+import card2img1 from './assets/FloorPlans/card2/Model 1551R-Main.webp'
+import card2img2 from './assets/FloorPlans/card2/Model 1551R- Upper.webp'
+import card2img3 from './assets/FloorPlans/card2/Model 1551R- Basement.webp'
 
-import card3img1 from './assets/FloorPlans/card3/Model 1558-main.jpg'
+import card3img1 from './assets/FloorPlans/card3/Model 1558-main.webp'
 import card3img2 from './assets/FloorPlans/card3/Model 1558-Upper.jpg'
 import card3img3 from './assets/FloorPlans/card3/Model 1558-Basement.jpg'
+
 
 const homeImages = [
     {
@@ -47,6 +48,8 @@ const homeImages = [
         'original': img1,
         "thumbnail": img1,
         'originalClass': 'homeImgs',
+        "ctaLink": '#/floor-plans',
+        "ctaLabel": "Explore Floorplans",
     },
     {
         'id': 4,
