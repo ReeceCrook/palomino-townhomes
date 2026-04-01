@@ -1,7 +1,10 @@
 .aboutUsPage {
+  --card-col: clamp(130px, 14vw, 200px);
   background-color: #9cc0c5;
   min-height: 100vh;
   box-sizing: border-box;
+  padding-left: var(--card-col);
+  padding-right: 70px;
 }
 
 .about-us {
@@ -39,27 +42,29 @@
 }
 
 .contactUsWrapper {
-  display: inline-block;
-  width: 50%;
-  margin-left: 100px;
-  margin-top: 80px;
+  padding: 80px 2% 40px;
 }
 
 .businessCardWrapper {
-  position: absolute;
-  top: 25%;
-  left: 5%;
-  width: 10%;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: var(--card-col);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0 6px;
+  box-sizing: border-box;
 }
 
-
 .businessCard {
-  position: relative;
   width: 100%;
   padding: 20px;
   border: 2px solid #ccc;
   text-align: center;
   background-color: white;
+  box-sizing: border-box;
 }
 
 .businessCard img {
@@ -87,10 +92,9 @@
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  position: absolute;
-  bottom: -43px;
-  left: 5%;
   width: 100%;
+  box-sizing: border-box;
+  font-size: small;
 }
 
 .facebookButton:hover {
@@ -99,12 +103,6 @@
 
 .facebookLogo {
   width: 20px;
-}
-
-.bbbRating {
-  position: absolute;
-  top: -64px;
-  left: 14%;
 }
 
 .bbbRating img {
@@ -120,30 +118,12 @@
   display: none;
 }
 
-
-@media only screen and (min-width: 601px) and (max-width: 1800px) {
-  .businessCard {
-    width: 100%;
-    top: 30%;
-    left: 1%;
-  }
-
-  .bbbRating {
-    top: auto;
-    bottom: 100%;
-    left: 2%;
-  }
-
-  .facebookButton {
-    bottom: auto;
-    top: 100%;
-    font-size: small;
-    left: 7%;
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 600px) {
+  .aboutUsPage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .mbLogo {
     width: 100%;
   }
@@ -156,43 +136,15 @@
     display: none;
   }
 
-  .businessCard {
-    position: static; 
-    width: 80%;
-  }
-
   .about-us {
     padding-left: 0;
     padding-right: 0;
   }
 
   .contactUsWrapper {
-    display: block;
-    width: 80%;
-    margin: 0 auto 0 0;
-    padding-left: 1%;
-    padding-right: 5%;
+    width: 100%;
+    padding: 70px 26% 40px 4%;
     box-sizing: border-box;
-  }
-
-  .socialsDiv {
-    flex-direction: column;
-    align-items: stretch;
-    width: 80%;
-  }
-
-  .facebookButton {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .bbbRating {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .bbbRating img {
-    height: 70px;
   }
 
   .about-us-title {
@@ -201,20 +153,31 @@
   }
 
   .businessCardWrapper {
-  position: static;
-  width: 80%;
-}
+    position: static;
+    width: 80%;
+    margin: 24px auto 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.bbbRating{
-  position: relative;
-  top: 0%;
-  left: 0%;
-}
+  .businessCard {
+    width: 100%;
+  }
 
-.facebookButton {
-  position: relative;
-  bottom: 0%;
-  left: 0%;
-}
+  .facebookButton {
+    justify-content: center;
+    width: 100%;
+  }
 
+  .bbbRating {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bbbRating img {
+    height: 70px;
+  }
 }

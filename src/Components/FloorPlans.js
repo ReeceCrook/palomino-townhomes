@@ -47,7 +47,6 @@ function FloorPlans() {
             </div>
           </div>
           <div className='infoBox'>
-            <span className="infoIcon">⚠️</span>
             <span className="infoMessage">Only 1 left!</span>
           </div>
           <hr className="divider" />

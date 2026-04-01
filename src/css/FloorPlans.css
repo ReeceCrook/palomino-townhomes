@@ -63,7 +63,7 @@
 }
 
 .floorPlanCard .infoBox {
-  background-color: rgb(255, 255, 0);
+  background-color: #db8f42;
   color: black;
   display: flex;
   align-items: center;
@@ -72,12 +72,7 @@
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin: auto;
-  width: 80%;
-}
-
-.infoIcon {
-  margin-right: 8px;
-  font-size: 16px;
+  width: 50%;
 }
 
 .cardTop {
