@@ -76,7 +76,7 @@
   text-decoration: none;
   margin-bottom: 10px;
   padding: 2px;
-  font-size: larger;
+  font-size: large;
 }
 
 .businessCard a:hover {
@@ -105,8 +105,13 @@
   width: 20px;
 }
 
+.bbbRating {
+  width: 100%;
+}
+
 .bbbRating img {
-  height: 60px;
+  width: 100%;
+  height: auto;
 }
 
 .mbLogo {
@@ -116,6 +121,26 @@
 
 .aboutUsMainLogo {
   display: none;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1800px) {
+  .aboutUsPage {
+    padding-right: 13%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-height: 750px) {
+  .businessCardWrapper {
+    gap: 6px;
+  }
+
+  .businessCard {
+    padding: 10px;
+  }
+
+  .businessCard img {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 600px) {

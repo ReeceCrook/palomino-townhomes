@@ -130,11 +130,14 @@
   }
 
   .lightboxCtaButton {
-  left: 16%;
-  top: 47%;
-  width: 27%;
-  height: 3%;
-  z-index: 10;
-  background-color: aqua;
-}
+    left: 16%;
+    top: 47%;
+    width: 27%;
+    height: 3%;
+    z-index: 10;
+  }
+
+  .mainSliderWrapper .infoBar {
+    display: none;
+  }
 }
