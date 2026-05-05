@@ -21,14 +21,14 @@ function Directions() {
         <MarkerF position={center} />
       </GoogleMap>
       <a
-        href='https://maps.app.goo.gl/kZGZBtfFjVg5rDvc7'
+        href='https://maps.app.goo.gl/7WwGEEsdZWE8nBde9'
         target='_blank'
         rel="noopener noreferrer"
         className='mapDirectionsLink'
         aria-label="Open Google Maps for Palomino Townhomes"
       >
         Palomino Townhomes<br />
-        5113 Palomino Ranch Point<br />
+        5129 Palomino Ranch Point<br />
         Colorado Springs, Co. 80922
       </a>
       <div className='infoBox'>

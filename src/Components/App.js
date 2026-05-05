@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <LoadScriptNext
-        googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_KEY}
+        googleMapsApiKey="AIzaSyBb37nQzzMw7_9NBshKx5uOTCj9oe9pxq0"
         loadingElement={<div>Loading map...</div>}
       >
         <NavBar />
